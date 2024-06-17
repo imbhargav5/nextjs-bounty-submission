@@ -1,0 +1,72 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.toc-item {
+  @apply text-sm;
+}
+
+.docs-toc {
+  @apply hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6;
+}
+
+ol.toc-level {
+  @apply mt-2 space-y-3 text-neutral-500 dark:text-neutral-400;
+}
+ol.toc-level:not(.toc-level-1) {
+  @apply pl-5;
+}
+
+ol.toc-level a {
+  @apply font-normal text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300;
+}
+
+code:after {
+  content: none !important;
+}
+
+code:before {
+  content: none !important;
+}
+
+code {
+  counter-reset: line;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+code > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+
+  /* Other styling */
+  display: inline-block;
+  width: 1rem;
+  margin-right: 1rem;
+  text-align: right;
+  color: text-neutral-500;
+}
+
+code[data-line-numbers-max-digits='2'] > [data-line]::before {
+  width: 1rem;
+}
+
+code[data-line-numbers-max-digits='3'] > [data-line]::before {
+  width: 1rem;
+}
+
+[data-rehype-pretty-code-title] {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  @apply bg-neutral-100;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  @apply text-neutral-200;
+}
+
+figcaption + pre {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
