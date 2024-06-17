@@ -13,8 +13,8 @@ export const generateSlug = (title: string) => {
     strict: true,
     replacement: '-',
   });
-  return slug
-}
+  return slug;
+};
 
 export const nanoid = customAlphabet(
   '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',

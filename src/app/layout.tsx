@@ -5,10 +5,8 @@ import 'server-only';
 import { AppProviders } from './AppProviders';
 
 export const metadata = {
-
   title: 'Nextbase Bounty',
   description: 'Nextbase Bounty',
-
 };
 
 export default async function RootLayout({
