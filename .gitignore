@@ -1,0 +1,22 @@
+.env.local
+.env.*.local
+node_modules
+.next
+tsconfig.tsbuildinfo
+./supabase/.temp/project-ref
+./supabase/.DS_Store
+./analyze
+.vercel
+playwright/.auth/user.json
+./test-results/
+supabase/.temp
+/test-results/*
+.yarn
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+analyze
+
+# Local Netlify folder
+.netlify
