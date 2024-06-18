@@ -10,6 +10,7 @@ const IntegrationSec: React.FC = () => {
         head="Master Integration Like Pros" 
         paragraph={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod`} 
         parag="tempor incididunt ut labore et dolore magna aliqua. Quis ipsum"
+        
       />
       <OrbitingCirclesDemo/>
       </div>
