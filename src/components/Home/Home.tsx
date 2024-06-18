@@ -18,7 +18,7 @@ const Home = () => {
           <ShinyButton text="Introducing" />
           <H1 className='leading-20 mt-2 mb-2'>Nextbase Ultimate Landing Page</H1>
           <P className='para dark:paraB'>Welcome to Nextbase Ultimate Landing Page: Your Gateway to Innovation. Discover the Future of <br /> Excellence and Elevate Your Experience.</P>
-          <div className=' flex md:flex-row flex-col md:w-1/2 justify-center items-center text-center md:gap-10 gap-2 mt-2 md:ml-44 md:mt-6 '> <LoginCTAButton/> <CusButton/>  </div>
+          <div className=' flex md:flex-row flex-col md:w-1/2 justify-center items-center text-center md:gap-10 gap-2 mt-2 md:ml-44 md:mt-6 '> <LoginCTAButton/> <CusButton variant="secondary" value={"Learn More"}/>  </div>
       </div>
     </div>
 

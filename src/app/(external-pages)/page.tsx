@@ -1,3 +1,5 @@
+import CTA from '@/components/CTA/CTA'
+import FAQ from '@/components/FAQ/FAQ'
 import FeatureCard from '@/components/FeatureCard/FeatureCard'
 import Home from '@/components/Home/Home'
 import IntegrationSec from '@/components/IntegrationSec/IntegrationSec'
@@ -19,6 +21,8 @@ const page = () => {
       {/* <Testinomial />    */}
       {/* Testinomial error de rha h  */}
       <Pricing />
+      <FAQ />
+      <CTA />
     </div>
     </>
   )

@@ -71,35 +71,14 @@ const Pricing = () => {
     </div>
  
  {/**Card Section */}
-
- <div className=''>
-    
-  <UpperCard plan={"Basic"} about={"Best for Small projects"} price={"$99"} />
- <div className='w-[319px] h-px border border-slate-200'></div>  
-<div className="text-center">
-<div className="grid grid-rows-1 md:grid-cols-3 text-center justify-center items-center">
-<div className='text-center'>
-{Card1.map((item, idx) => (
-  <div className='flex flex-row gap-4 mt-4 ' key={idx}>
-    <p>{item.icons}</p>
-    <p>{item.desc}</p>
-  </div>
-))}
- </div>
-
-</div>
+     <div className='allthreecard  w-[1104px] h-[872px] flex-col justify-center items-center gap-8 inline-flex'>
+         
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+     </div>
 
 
-
-<div className='card2'>
-<UpperCard plan={"Basic"} about={"Best for Small projects"} price={"$99"} />
-</div>
-<div>Card3</div>
-
-</div>
-
-
-</div>
     </>
   )
 }

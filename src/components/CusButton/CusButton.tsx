@@ -10,3 +10,16 @@ function CusButton() {
 }
 
 export default CusButton
+
+
+// import React from 'react'
+// import { Button } from "@/components/ui/button"
+// const CusButton = ({value}) => {
+//   return (
+//    <>
+//  <Button>{value}</Button>
+//    </>
+//   )
+// }
+
+// export default CusButton
