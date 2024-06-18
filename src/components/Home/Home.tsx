@@ -22,7 +22,7 @@ const Home = () => {
       </div>
     </div>
 
-<div className="rounded-lg shadow md:mt-20 items-center text-center flex justify-center mb-44 "> <Image src={"/logos/home.png"} alt='img' className='w-[359px] h-[514px] md:w-[1104px] md:h-[514px]'  width={"359"} height={"514"}/> </div>
+<div className="rounded-lg shadow md:mt-20 items-center text-center flex justify-center md:mb-44  "> <Image src={"/logos/home.png"} alt='img' className='w-[359px] h-[514px] md:w-[1104px] md:h-[514px]'  width={"359"} height={"514"}/> </div>
 </>
   )
 }
