@@ -10,7 +10,7 @@ export function MobileMenu() {
   return (
     <>
       {mobileMenuOpen && (
-        <ul className="md:hidden w-full shadow-2xl py-2 flex flex-col items-start font-medium pb-2">
+        <ul className="lg:hidden w-md shadow-2xl py-2 flex flex-col items-start font-medium pb-2">
           {navbarLinks.map(({ name, href }) => (
             <li
               key={name}

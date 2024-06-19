@@ -34,6 +34,6 @@
     "e2e/**/*.ts",
     "src/**/*.ts",
     "src/**/*.tsx"
-  ],
+, "src/app/(external-pages)/_components/pricing-section"  ],
   "exclude": ["node_modules"]
 }

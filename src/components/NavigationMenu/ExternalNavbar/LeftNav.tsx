@@ -76,9 +76,9 @@ export function LeftNav() {
   return (
     <>
       <DocsMobileNavigation />
-      <div className="flex space-x-8">
+      <div className="hidden md:flex space-x-8">
         <Link href="/" className={cn('font-bold text-xl ')}>
-          <div className="relative flex space-x-2 h-10 md:w-fit items-center justify-center text-black dark:text-white dark:-ml-4 -ml-2">
+          <div className="relative flex space-x-2 h-10 md:w-fit items-center justify-center text-black dark:text-white dark:-ml-4 -ml-2 ">
             <Image
               src={acmeLightLogo}
               width={40}
