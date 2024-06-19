@@ -1,15 +1,12 @@
-import React, { FC } from 'react';
+import React from 'react';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { H1 } from '../ui/Typography/H1';
-import SectionLink from '../_common/SectionLink';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { QuestionMarkIcon } from '@radix-ui/react-icons';
-import { Subtle } from '../ui/Typography/Subtle';
 import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
 import Link from 'next/link';
@@ -34,7 +31,7 @@ const FAQs = [
   },
 ];
 
-const FAQSection = ({}) => {
+const FAQSection = () => {
   return (
     <section className="  flex flex-col items-center md:px-[341px] px-4 py-24  ">
       <div className=" flex flex-col gap-12">

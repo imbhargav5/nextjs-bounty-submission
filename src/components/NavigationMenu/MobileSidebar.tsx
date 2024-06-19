@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import {
   Sheet,
   SheetContent,
@@ -11,8 +11,7 @@ import { Menu } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface MobileSidebarProps {}
-const MobileSidebar: FC<MobileSidebarProps> = ({}) => {
+const MobileSidebar = () => {
   return (
     <Sheet>
       <SheetTrigger className=" md:hidden pr-4 hover:opacity-75 transition">

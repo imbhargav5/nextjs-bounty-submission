@@ -1,12 +1,11 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { FeaturesBento } from './FeaturesBento';
 import Link from 'next/link';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
 
-interface FeatureSectionProps {}
-const FeatureSection: FC<FeatureSectionProps> = ({}) => {
+const FeatureSection = () => {
   return (
     <div className=" flex flex-col px-4 pt-12 pb-24">
       <div className=" md:mx-[204px] flex flex-col gap-12">

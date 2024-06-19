@@ -36,7 +36,11 @@ const companies: { name: string; icon: (() => React.JSX.Element) | null }[] = [
 const ScrollingCompanies = () => {
   return (
     <div className="relative flex  h-full w-full flex-col  items-center justify-center overflow-hidden rounded-lg  bg-background py-20 ">
-      <Marquee childrenClassName='md:gap-[72px] md:pl-[72px] gap-6 pl-6' pauseOnHover className="[--duration:20s]">
+      <Marquee
+        childrenClassName="md:gap-[72px] md:pl-[72px] gap-6 pl-6"
+        pauseOnHover
+        className="[--duration:20s]"
+      >
         {companies.map((company) => (
           <div
             key={company.name}

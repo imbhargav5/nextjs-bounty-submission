@@ -1,15 +1,11 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { IntegrationOrbitingCircles } from './IntegrationOrbitingCircles';
-import { H1 } from '../ui/Typography/H1';
-import { Subtle } from '../ui/Typography/Subtle';
-import SectionLink from '../_common/SectionLink';
-import { ArrowRight, Network, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
 import Link from 'next/link';
 
-interface IntegrationSectionProps {}
-const IntegrationSection: FC<IntegrationSectionProps> = ({}) => {
+const IntegrationSection = () => {
   return (
     <section className=" flex flex-col items-center md:py-24 py-12 ">
       <div className=" md:mx-[204px] mx-4 flex flex-col gap-32">
@@ -28,7 +24,10 @@ const IntegrationSection: FC<IntegrationSectionProps> = ({}) => {
             <SectionTitle value="Master Integration Like Pros" />
           </div>
 
-          <SectionDescription className=' text-wrap' value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum" />
+          <SectionDescription
+            className=" text-wrap"
+            value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum"
+          />
         </div>
         <div className="lg:flex hidden  justify-center  ">
           <IntegrationOrbitingCircles />

@@ -10,7 +10,12 @@ const SectionDescription: FC<SectionDescriptionProps> = ({
   value,
 }) => {
   return (
-    <p className={cn("md:text-xl text-sm font-[400] text-muted-foreground md:text-center", className)}>
+    <p
+      className={cn(
+        'md:text-xl text-sm font-[400] text-muted-foreground md:text-center',
+        className,
+      )}
+    >
       {value}
     </p>
   );

@@ -118,7 +118,6 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
 const features = [
   {
     // Icon: FileTextIcon,
-    Icon: null,
     name: 'Save your files',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -143,7 +142,6 @@ const features = [
     ),
   },
   {
-    Icon: null,
     name: 'Sit Amet Consectetur',
     description:
       'Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -179,7 +177,6 @@ const features = [
     ),
   },
   {
-    Icon: null,
     name: 'Adipiscing Elit Sed',
     description:
       'Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur.',
@@ -191,7 +188,6 @@ const features = [
     ),
   },
   {
-    Icon: null,
     name: 'Eiusmod Tempor Incididunt',
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt inculpa qofficia deserunt mollit anim id e',
@@ -207,7 +203,6 @@ const features = [
     ),
   },
   {
-    Icon: null,
     name: 'Magna Aliqua Ut',
     description:
       'Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur.',
@@ -215,9 +210,7 @@ const features = [
     href: '/',
     cta: 'Learn more',
     background: (
-      <GlobeGrid
-        className="absolute right-0 top-10 origin-top rounded-md border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
-      />
+      <GlobeGrid className="absolute right-0 top-10 origin-top rounded-md border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105" />
     ),
   },
 ];

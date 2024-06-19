@@ -13,4 +13,3 @@ export const navbarLinks = [
     href: '/roadmap',
   },
 ];
-

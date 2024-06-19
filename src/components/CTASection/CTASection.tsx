@@ -1,12 +1,11 @@
-import React, { FC } from 'react';
-import SectionLink from '../_common/SectionLink';
+import React from 'react';
 import { ArrowRight, Sailboat } from 'lucide-react';
 import { Button } from '../ui/button';
 import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
 import Link from 'next/link';
 
-const CTASection = ({}) => {
+const CTASection = () => {
   return (
     <section className="px-4 pt-12 pb-16 md:px-[203px]">
       <div className=" flex flex-col md:items-center items-start gap-2">

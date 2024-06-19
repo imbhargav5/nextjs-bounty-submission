@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { Button } from '../ui/button';
 import { ArrowRight, ChevronRight, Sparkles } from 'lucide-react';
 import Image from 'next/image';
@@ -6,8 +6,7 @@ import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
 import Link from 'next/link';
 
-interface HeroSectionProps {}
-const HeroSection: FC<HeroSectionProps> = ({}) => {
+const HeroSection = () => {
   return (
     <section className="  flex flex-col gap-16 md:px-52 px-4 md:pt-16 pt-[10px] pb-12 md:pb-24  ">
       <div
@@ -57,7 +56,12 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
           width={0}
           height={0}
           sizes="100vw"
-          style={{ width: '100%', height : "514px", objectFit : "cover", objectPosition : "center" }} // optional
+          style={{
+            width: '100%',
+            height: '514px',
+            objectFit: 'cover',
+            objectPosition: 'center',
+          }} // optional
         />
       </div>
     </section>

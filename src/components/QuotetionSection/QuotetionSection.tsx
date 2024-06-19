@@ -1,14 +1,7 @@
-import {
-  Minus,
-  Quote,
-  QuoteIcon,
-  SeparatorHorizontal,
-  SeparatorVertical,
-} from 'lucide-react';
-import Image from 'next/image';
-import React, { FC } from 'react';
+import { Minus, Quote } from 'lucide-react';
+import React from 'react';
 
-const QuotetionSection = ({}) => {
+const QuotetionSection = () => {
   return (
     <section className=" flex flex-col items-center md:px-[204px] px-4 pt-12 md:pt-24 pb-6 md:pb-12 bg-muted">
       <figure className=" pb-12 flex flex-col gap-3">
@@ -21,6 +14,7 @@ const QuotetionSection = ({}) => {
             odio. Praesent libero.
           </blockquote>
           <figcaption className=" flex items-center gap-4 justify-center ">
+            {/* TODO : CHANGE IMAGE TAG */}
             <img
               className=" rounded-full "
               src={'/images/testimonialUser.jpeg'}

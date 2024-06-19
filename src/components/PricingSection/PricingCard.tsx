@@ -1,13 +1,11 @@
 import { CheckCircle2 } from 'lucide-react';
 import React, { FC } from 'react';
 import { Button } from '../ui/button';
-import { H2 } from '../ui/Typography/H2';
 import { Separator } from '../ui/separator';
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
@@ -29,7 +27,12 @@ const PricingCard: FC<PricingCardProps> = ({
   badge,
 }) => {
   return (
-    <Card className={cn("flex flex-col md:w-[352px] relative h-fit", !!badge && "bg-muted")}>
+    <Card
+      className={cn(
+        'flex flex-col md:w-[352px] relative h-fit',
+        !!badge && 'bg-muted',
+      )}
+    >
       <CardHeader className="">
         <CardTitle className=" text-xl font-[600]">{title}</CardTitle>
         <CardDescription className=" flex flex-col gap-4">

@@ -1,5 +1,4 @@
 import React from 'react';
-import SectionLink from '../_common/SectionLink';
 import { ArrowRight, DollarSignIcon } from 'lucide-react';
 import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
@@ -8,7 +7,7 @@ import { basicFeatures, premiumFeatures, standardFeatures } from './constants';
 import PricingTabs from './PricingTabs';
 import Link from 'next/link';
 
-const PricingSection = ({}) => {
+const PricingSection = () => {
   return (
     <section className="px-4 md:px-0 flex flex-col items-center py-24 ">
       <div className=" flex flex-col gap-12 md:mx-[204px]">
@@ -47,7 +46,7 @@ const PricingSection = ({}) => {
                 price={299}
                 title="Standard"
                 features={standardFeatures}
-                badge='Most popular'
+                badge="Most popular"
               />
               <PricingCard
                 description="Best for organization"

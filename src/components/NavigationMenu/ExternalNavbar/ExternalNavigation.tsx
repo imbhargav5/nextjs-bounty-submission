@@ -4,7 +4,7 @@ import { LeftNav } from './LeftNav';
 import { LoginCTAButton } from './LoginCTAButton';
 import { MobileMenu } from './MobileMenu';
 import { MobileMenuProvider } from './MobileMenuContext';
-import { MobileMenuOpen } from './MobileMenuOpen';
+
 import MobileSidebar from '../MobileSidebar';
 
 export function ExternalNavigation() {

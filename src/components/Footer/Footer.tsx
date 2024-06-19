@@ -4,7 +4,6 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
-import { H3 } from '../ui/Typography/H3';
 import { Separator } from '../ui/separator';
 
 export function Footer() {

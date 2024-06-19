@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { cn } from "@/lib/utils";
-import { wrap } from "@motionone/utils";
+import { cn } from '@/lib/utils';
+import { wrap } from '@motionone/utils';
 import {
   motion,
   useAnimationFrame,
@@ -10,8 +10,8 @@ import {
   useSpring,
   useTransform,
   useVelocity,
-} from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+} from 'framer-motion';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface VelocityScrollProps {
   text: string;
@@ -63,8 +63,8 @@ export function VelocityScroll({
 
       calculateRepetitions();
 
-      window.addEventListener("resize", calculateRepetitions);
-      return () => window.removeEventListener("resize", calculateRepetitions);
+      window.addEventListener('resize', calculateRepetitions);
+      return () => window.removeEventListener('resize', calculateRepetitions);
     }, [children]);
 
     const x = useTransform(baseX, (v) => `${wrap(-100 / repetitions, 0, v)}%`);
@@ -89,10 +89,10 @@ export function VelocityScroll({
         className="w-full overflow-hidden whitespace-nowrap"
         ref={containerRef}
       >
-        <motion.div className={cn("inline-block", className)} style={{ x }}>
+        <motion.div className={cn('inline-block', className)} style={{ x }}>
           {Array.from({ length: repetitions }).map((_, i) => (
             <span key={i} ref={i === 0 ? textRef : null}>
-              {children}{" "}
+              {children}{' '}
             </span>
           ))}
         </motion.div>
@@ -105,7 +105,6 @@ export function VelocityScroll({
       <ParallaxText baseVelocity={default_velocity} className={className}>
         {text}
       </ParallaxText>
-     
     </section>
   );
 }

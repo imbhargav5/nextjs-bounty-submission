@@ -1,8 +1,7 @@
-import React, { FC } from 'react';
-import { H2 } from '../ui/Typography/H2';
+import React from 'react';
 import ScrollingCompanies from './ScrollingCompanies';
 
-const BrandSection = ({}) => {
+const BrandSection = () => {
   return (
     <section className=" py-6 flex flex-col gap-8  ">
       <div className=" px-4 pb-6 mx-4">
