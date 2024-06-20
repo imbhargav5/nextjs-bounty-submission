@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className=" flex flex-col md:items-center">
           <div className="pb-4 flex md:justify-center justify-start">
             <Link
-              className="flex gap-1 flex-row w-[192px] text-sm items-center bg-muted rounded-[80px] px-3 py-1 whitespace-nowrap  border border-[#E2E8F0]"
+              className="flex gap-1 flex-row w-[192px] text-sm items-center bg-muted rounded-[80px] px-3 py-1 whitespace-nowrap  border dark:border-background"
               href="/#"
             >
               <Sparkles />

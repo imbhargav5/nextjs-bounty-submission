@@ -1,4 +1,5 @@
 import { Minus, Quote } from 'lucide-react';
+import Image from 'next/image';
 import React from 'react';
 
 const QuotetionSection = () => {
@@ -14,8 +15,7 @@ const QuotetionSection = () => {
             odio. Praesent libero.
           </blockquote>
           <figcaption className=" flex items-center gap-4 justify-center ">
-            {/* TODO : CHANGE IMAGE TAG */}
-            <img
+            <Image
               className=" rounded-full "
               src={'/images/testimonialUser.jpeg'}
               width={30}

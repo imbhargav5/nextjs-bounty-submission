@@ -4,8 +4,7 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 const PricingTabs = () => {
   return (
     <Tabs defaultValue="account" className="md:w-[400px] ">
-      {/* TODO : CHANGE THE HARDCODED COLOR */}
-      <TabsList className=" bg-[#F1F5F9]">
+      <TabsList className=" bg-muted">
         <TabsTrigger className=" md:px-10 px-5" value="account">
           Monthly
         </TabsTrigger>

@@ -38,7 +38,7 @@ export default function Marquee({
           <div
             key={i}
             className={cn(
-              `  flex shrink-0 justify-around ${childrenClassName} `,
+              `  flex shrink-0 justify-around ${childrenClassName || '[gap:var(--gap)]'} `,
               {
                 'animate-marquee flex-row': !vertical,
                 'animate-marquee-vertical flex-col': vertical,
