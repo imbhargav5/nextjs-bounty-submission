@@ -54,13 +54,14 @@ export default function Globe({
       precision: 0.001,
     },
   }));
-
-  const updatePointerInteraction = (value: unknown) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const updatePointerInteraction = (value: any) => {
     pointerInteracting.current = value;
-    canvasRef.current.style.cursor = value ? 'grabbing' : 'grab';
+    if (canvasRef.current)
+      canvasRef.current.style.cursor = value ? 'grabbing' : 'grab';
   };
 
-  const updateMovement = (clientX: unknown) => {
+  const updateMovement = (clientX: number) => {
     if (pointerInteracting.current !== null) {
       const delta = clientX - pointerInteracting.current;
       pointerInteractionMovement.current = delta;
