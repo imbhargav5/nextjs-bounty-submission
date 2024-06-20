@@ -8,6 +8,7 @@ import {
 import Orbit from './components/Orbit';
 import Testimonial from './components/Testimonial';
 import Companies from './components/Companies';
+import Image from 'next/image';
 
 export default function Page() {
   return (
@@ -97,7 +98,7 @@ export default function Page() {
             </button>
           </div>
         </div>
-        <img
+        <Image
           className="lg:w-4/6 h-96 md:w-5/6 mb-0 object-cover object-center rounded"
           alt="hero"
           src="https://dummyimage.com/720x600"
@@ -165,7 +166,7 @@ export default function Page() {
         <div className="flex flex-wrap w-3/4 mx-auto mb-2">
           <div className="p-3 md:w-1/2 sm:mb-0 mb-6 border-2 rounded">
             <div className="rounded h-64 overflow-hidden">
-              <img
+              <Image
                 alt="content"
                 className="object-cover object-center h-full w-full"
                 src="https://dummyimage.com/1203x503"
@@ -182,7 +183,7 @@ export default function Page() {
           </div>
           <div className="p-3 md:w-1/2 sm:mb-0 mb-6 border-2 rounded">
             <div className="rounded h-64 overflow-hidden">
-              <img
+              <Image
                 alt="content"
                 className="object-cover object-center h-full w-full"
                 src="https://dummyimage.com/1203x503"
@@ -201,7 +202,7 @@ export default function Page() {
         <div className="flex flex-wrap w-3/4 mx-auto">
           <div className="p-3 md:w-1/3 sm:mb-0 mb-6 border-2 rounded">
             <div className="rounded h-64 overflow-hidden">
-              <img
+              <Image
                 alt="content"
                 className="object-cover object-center h-full w-full"
                 src="https://dummyimage.com/1203x503"
@@ -218,7 +219,7 @@ export default function Page() {
           </div>
           <div className="p-3 md:w-1/3 sm:mb-0 mb-6 border-2 rounded">
             <div className="rounded h-64 overflow-hidden">
-              <img
+              <Image
                 alt="content"
                 className="object-cover object-center h-full w-full"
                 src="https://dummyimage.com/1204x504"
@@ -235,7 +236,7 @@ export default function Page() {
           </div>
           <div className="p-3 md:w-1/3 sm:mb-0 mb-6 border-2 rounded">
             <div className="rounded h-64 overflow-hidden">
-              <img
+              <Image
                 alt="content"
                 className="object-cover object-center h-full w-full"
                 src="https://dummyimage.com/1205x505"
@@ -326,7 +327,7 @@ export default function Page() {
             next-level features guide reveals the essentials for staying ahead.
           </p>
         </div>
-        {/* <img className="lg:w-2/6 h-96 md:w-5/6 mb-32 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/> */}
+        {/* <Image className="lg:w-2/6 h-96 md:w-5/6 mb-32 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/> */}
         <Orbit />
       </div>
 
