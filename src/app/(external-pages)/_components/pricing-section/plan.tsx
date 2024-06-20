@@ -22,7 +22,7 @@ export function Plan({
     <div
       className={`flex flex-col w-full border dark:border-[#1E293B] dark:border-muted gap-7 ${isOdd ? 'dark:bg-muted' : 'dark:bg-background'} p-5 rounded-lg`}
     >
-      <div className="flex flex-col gap-4 dark:border-[#1E293B]">
+      <div className="flex flex-col gap-4">
         <div className="flex justify-between items-center">
           <h2 className="text-xl font-semibold text-gray-900 dark:text-darkTremor-content-strong">
             {title}

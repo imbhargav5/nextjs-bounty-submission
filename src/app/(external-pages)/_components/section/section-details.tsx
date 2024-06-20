@@ -16,8 +16,8 @@ export function SectionDetails({
   icon,
 }: SectionDetailsProps) {
   return (
-    <div className="flex flex-col gap-4 sm:items-center max-w-[945px]">
-      <div className="flex w-[148px] sm:w-auto items-center gap-1 bg-muted px-3 py-1 rounded-full border">
+    <div className="flex flex-col gap-4 items-start sm:items-center max-w-[945px]">
+      <div className="flex sm:w-auto items-center gap-1 bg-muted px-3 py-1 rounded-full border">
         {icon}
         <span className="text-sm">{sectionName}</span>
         <ArrowRightIcon size={16} className="ml-1" />

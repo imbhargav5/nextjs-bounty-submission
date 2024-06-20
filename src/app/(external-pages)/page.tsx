@@ -10,6 +10,9 @@ import { Orbits } from './_components/integration-section/body';
 import { TestimonialSection } from './_components/testimonial-section';
 import { PricingSectionHead } from './_components/pricing-section/head';
 import { Pricing } from './_components/pricing-section/body';
+import { FAQSectionHead } from './_components/faq-section/head';
+import { FAQList } from './_components/faq-section/body';
+import { CTASection } from './_components/cta-section';
 export default function Page() {
   return (
     <main className="w-full h-full">
@@ -34,7 +37,17 @@ export default function Page() {
       <Section
         sectionHead={<PricingSectionHead />}
         body={<Pricing />}
-        classes="py-12 md:py-24 gap-8"
+        classes="py-24 gap-8"
+      />
+      <Section
+        sectionHead={<FAQSectionHead />}
+        body={<FAQList />}
+        classes="py-12 gap-8"
+      />
+      <Section
+        sectionHead={<CTASection />}
+        body={<span />}
+        classes="pt-12 pb-16 gap-2"
       />
     </main>
   );
