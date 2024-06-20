@@ -12,9 +12,13 @@ export function ExternalNavigationCTAButton({
   const text = isLoggedIn ? 'Dashboard' : 'Log In';
   return (
     <Link href={href} className="w-full">
-      <Button variant="default" size="default" className="group w-full">
+      <Button
+        variant="default"
+        size="default"
+        className="group w-full px-4 pt-2"
+      >
         {isLoading ? (
-          'Please wait...'
+          <>Please wait...</>
         ) : (
           <>
             {text}

@@ -4,7 +4,8 @@ import { LeftNav } from './LeftNav';
 import { LoginCTAButton } from './LoginCTAButton';
 import { MobileMenu } from './MobileMenu';
 import { MobileMenuProvider } from './MobileMenuContext';
-import { MobileMenuOpen } from './MobileMenuOpen';
+
+import MobileSidebar from '../MobileSidebar';
 
 export function ExternalNavigation() {
   return (
@@ -14,6 +15,8 @@ export function ExternalNavigation() {
           className="flex items-center w-full h-[54px] md:container justify-between px-6 md:px-8"
           aria-label="Global"
         >
+          <MobileSidebar />
+
           <LeftNav />
           <div className="flex gap-5">
             <Suspense
@@ -28,7 +31,6 @@ export function ExternalNavigation() {
                 </div>
               </div>
             </Suspense>
-            <MobileMenuOpen />
           </div>
         </nav>
         <MobileMenu />
