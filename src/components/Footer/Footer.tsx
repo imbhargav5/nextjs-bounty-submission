@@ -42,8 +42,8 @@ export function Footer() {
           </div>
           <Separator className="w-full" />
           <div className="flex justify-between mt-16">
-            <p className="text-[#64748B] text-sm font-normal">
-              © 2023 Arni Creative Private Limited. All Rights Reserved.
+            <p className="text-[#64748B] text-sm font-normal flex items-center">
+              © 2023 Arni Creative Private Limited. All Rights Reserved.
             </p>
             <div className="flex space-x-6">
               <svg

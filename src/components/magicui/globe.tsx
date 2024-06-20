@@ -55,12 +55,12 @@ export default function Globe({
     },
   }));
 
-  const updatePointerInteraction = (value: any) => {
+  const updatePointerInteraction = (value: unknown) => {
     pointerInteracting.current = value;
-    canvasRef.current!.style.cursor = value ? 'grabbing' : 'grab';
+    canvasRef.current.style.cursor = value ? 'grabbing' : 'grab';
   };
 
-  const updateMovement = (clientX: any) => {
+  const updateMovement = (clientX: unknown) => {
     if (pointerInteracting.current !== null) {
       const delta = clientX - pointerInteracting.current;
       pointerInteractionMovement.current = delta;
@@ -69,7 +69,7 @@ export default function Globe({
   };
 
   const onRender = useCallback(
-    (state: Record<string, any>) => {
+    (state: Record<string, unknown>) => {
       if (!pointerInteracting.current) phi += 0.005;
       state.phi = phi + r.get();
       state.width = width * 2;
@@ -87,7 +87,7 @@ export default function Globe({
   useEffect(() => {
     window.addEventListener('resize', onResize);
     onResize();
-
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const globe = createGlobe(canvasRef.current!, {
       ...config,
       width: width * 2,
@@ -95,7 +95,10 @@ export default function Globe({
       onRender,
     });
 
-    setTimeout(() => (canvasRef.current!.style.opacity = '1'));
+    setTimeout(() => {
+      if (!canvasRef.current) return;
+      canvasRef.current.style.opacity = '1';
+    });
     return () => globe.destroy();
   }, []);
 

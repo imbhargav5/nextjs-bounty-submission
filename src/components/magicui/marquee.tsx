@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import { ReactNode } from 'react';
 
 interface MarqueeProps {
   className?: string;
@@ -7,7 +8,7 @@ interface MarqueeProps {
   children?: React.ReactNode;
   vertical?: boolean;
   repeat?: number;
-  [key: string]: any;
+  [key: string]: string | boolean | number | undefined | ReactNode;
 }
 
 export default function Marquee({
