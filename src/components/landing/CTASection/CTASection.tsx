@@ -1,9 +1,9 @@
 import React from 'react';
 import { Sailboat } from 'lucide-react';
-import { Button } from '../ui/button';
-import SectionTitle from '../_common/SectionTitle';
-import SectionDescription from '../_common/SectionDescription';
-import SectionLink from '../_common/SectionLink';
+import { Button } from '../../ui/button';
+import SectionTitle from '../../_common/SectionTitle';
+import SectionDescription from '../../_common/SectionDescription';
+import SectionLink from '../../_common/SectionLink';
 
 const CTASection = () => {
   return (

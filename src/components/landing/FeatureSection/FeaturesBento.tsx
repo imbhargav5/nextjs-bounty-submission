@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils';
 import { BentoCard, BentoGrid } from '@/components/magicui/bento-grid';
 import Marquee from '@/components/magicui/marquee';
 import { AnimatedBeamMultipleOutputDemo } from './AnimatedBeamMultipleOutputs';
-import GlobeGrid from './Globe';
+import Globe from '@/components/magicui/globe';
 
 const files = [
   {
@@ -44,22 +44,24 @@ interface Item {
   time: string;
 }
 
-
 const features = [
   {
-    // Icon: FileTextIcon,
     name: 'Save your files',
+    className: 'col-span-6 lg:col-span-3',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    href: '/',
-    cta: 'Learn more',
-    className: 'col-span-6 lg:col-span-3',
     background: (
-      <Command className="absolute right-10 top-10 w-[70%] origin-top translate-x-0 border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10">
-        <CommandInput placeholder="Type a command or search..." />
+      <Command
+        value="0"
+        className="absolute -right-5 top-10 w-[70%] origin-top translate-x-0 border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10"
+      >
+        <CommandInput
+          className="border-none focus:ring-0"
+          placeholder="Type a command or search..."
+        />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
-          <CommandGroup heading="Suggestions">
+          <CommandGroup className="pointer-events-none" heading="Suggestions">
             <CommandItem>screenshot.png</CommandItem>
             <CommandItem>bitcoin.pdf</CommandItem>
             <CommandItem>finances.xlsx</CommandItem>
@@ -71,13 +73,24 @@ const features = [
       </Command>
     ),
   },
+
   {
     name: 'Sit Amet Consectetur',
+    className: 'col-span-6 lg:col-span-3',
+
     description:
       'Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    href: '/',
-    cta: 'Learn more',
-    className: 'col-span-6 lg:col-span-3',
+
+    background: (
+      <AnimatedBeamMultipleOutputDemo className="absolute right-2 top-4 h-full pt-0 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
+    ),
+  },
+  {
+    name: 'Adipiscing Elit Sed',
+    className: 'col-span-6 lg:col-span-2',
+
+    description:
+      'Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur.',
     background: (
       <Marquee
         pauseOnHover
@@ -106,24 +119,13 @@ const features = [
       </Marquee>
     ),
   },
-  {
-    name: 'Adipiscing Elit Sed',
-    description:
-      'Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur.',
-    href: '/',
-    cta: 'Learn more',
-    className: 'col-span-6 lg:col-span-2',
-    background: (
-      <AnimatedBeamMultipleOutputDemo className="absolute right-2 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
-    ),
-  },
+
   {
     name: 'Eiusmod Tempor Incididunt',
-    description:
-      'Excepteur sint occaecat cupidatat non proident, sunt inculpa qofficia deserunt mollit anim id e',
     className: 'col-span-6 lg:col-span-2',
-    href: '/',
-    cta: 'Learn more',
+
+    description:
+      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qofficia deserunt mollit anim id e',
     background: (
       <Calendar
         mode="single"
@@ -134,14 +136,11 @@ const features = [
   },
   {
     name: 'Magna Aliqua Ut',
+    className: 'col-span-6 lg:col-span-2',
+
     description:
       'Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur.',
-    className: 'col-span-6 lg:col-span-2',
-    href: '/',
-    cta: 'Learn more',
-    background: (
-      <GlobeGrid className="absolute right-0 top-10 origin-top rounded-md border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105" />
-    ),
+    background: <Globe className=" h-full " />,
   },
 ];
 
@@ -153,4 +152,11 @@ export function FeaturesBento() {
       ))}
     </BentoGrid>
   );
+}
+
+{
+  /* 
+  
+  
+  */
 }

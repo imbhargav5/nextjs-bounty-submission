@@ -1,7 +1,7 @@
 import { CheckCircle2 } from 'lucide-react';
 import React, { FC } from 'react';
-import { Button } from '../ui/button';
-import { Separator } from '../ui/separator';
+import { Button } from '../../ui/button';
+import { Separator } from '../../ui/separator';
 import {
   Card,
   CardContent,
@@ -9,7 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Badge } from '../ui/badge';
+import { Badge } from '../../ui/badge';
 import { cn } from '@/lib/utils';
 
 interface PricingCardProps {

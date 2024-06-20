@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from '../_common/SectionTitle';
-import SectionDescription from '../_common/SectionDescription';
+import SectionTitle from '../../_common/SectionTitle';
+import SectionDescription from '../../_common/SectionDescription';
 import { ScrollingTestimonials } from './ScrolllingTestimonials';
 
 const TestimonialSection = () => {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { IntegrationOrbitingCircles } from './IntegrationOrbitingCircles';
 import {  Network } from 'lucide-react';
-import SectionTitle from '../_common/SectionTitle';
-import SectionDescription from '../_common/SectionDescription';
-import SectionLink from '../_common/SectionLink';
+import SectionTitle from '../../_common/SectionTitle';
+import SectionDescription from '../../_common/SectionDescription';
+import SectionLink from '../../_common/SectionLink';
 
 const IntegrationSection = () => {
   return (

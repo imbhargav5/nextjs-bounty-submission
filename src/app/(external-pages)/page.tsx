@@ -1,12 +1,12 @@
 import BrandSection from '@/components/landing/BrandSection/BrandSection';
-import CTASection from '@/components/CTASection/CTASection';
-import FAQSection from '@/components/FAQSection/FAQSection';
-import FeatureSection from '@/components/FeatureSection/FeatureSection';
-import HeroSection from '@/components/HeroSection/HeroSection';
-import IntegrationSection from '@/components/IntegerationSection/IntegrationSection';
-import PricingSection from '@/components/PricingSection/PricingSection';
-import QuotetionSection from '@/components/QuotetionSection/QuotetionSection';
-import TestimonialSection from '@/components/TestimonialSection/TestimonialSection';
+import CTASection from '@/components/landing/CTASection/CTASection';
+import FAQSection from '@/components/landing/FAQSection/FAQSection';
+import FeatureSection from '@/components/landing/FeatureSection/FeatureSection';
+import HeroSection from '@/components/landing/BrandSection/HeroSection/HeroSection';
+import IntegrationSection from '@/components/landing/IntegerationSection/IntegrationSection';
+import PricingSection from '@/components/landing/PricingSection/PricingSection';
+import QuotetionSection from '@/components/landing/QuotetionSection/QuotetionSection';
+import TestimonialSection from '@/components/landing/TestimonialSection/TestimonialSection';
 
 export default function Page() {
   return (

@@ -6,9 +6,9 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { QuestionMarkIcon } from '@radix-ui/react-icons';
-import SectionTitle from '../_common/SectionTitle';
-import SectionDescription from '../_common/SectionDescription';
-import SectionLink from '../_common/SectionLink';
+import SectionTitle from '../../_common/SectionTitle';
+import SectionDescription from '../../_common/SectionDescription';
+import SectionLink from '../../_common/SectionLink';
 
 const FAQs = [
   {

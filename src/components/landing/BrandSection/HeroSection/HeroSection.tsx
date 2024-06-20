@@ -1,10 +1,10 @@
 import React from 'react';
-import { Button } from '../ui/button';
+import { Button } from '../../../ui/button';
 import { ArrowRight, ChevronRight, Sparkles } from 'lucide-react';
 import Image from 'next/image';
-import SectionTitle from '../_common/SectionTitle';
-import SectionDescription from '../_common/SectionDescription';
-import SectionLink from '../_common/SectionLink';
+import SectionTitle from '../../../_common/SectionTitle';
+import SectionDescription from '../../../_common/SectionDescription';
+import SectionLink from '../../../_common/SectionLink';
 
 const HeroSection = () => {
   return (

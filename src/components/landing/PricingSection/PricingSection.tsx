@@ -1,11 +1,11 @@
 import React from 'react';
 import { DollarSignIcon } from 'lucide-react';
-import SectionTitle from '../_common/SectionTitle';
-import SectionDescription from '../_common/SectionDescription';
+import SectionTitle from '../../_common/SectionTitle';
+import SectionDescription from '../../_common/SectionDescription';
 import PricingCard from './PricingCard';
 import { basicFeatures, premiumFeatures, standardFeatures } from './constants';
 import PricingTabs from './PricingTabs';
-import SectionLink from '../_common/SectionLink';
+import SectionLink from '../../_common/SectionLink';
 
 const PricingSection = () => {
   return (

@@ -17,7 +17,7 @@ const MobileSidebar = () => {
       <SheetTrigger className=" md:hidden pr-4 hover:opacity-75 transition">
         <Menu />
       </SheetTrigger>
-      <SheetContent side={'left'} className="px-4 pt-1 w-64">
+      <SheetContent side={'left'} className="px-4 pt-1 ">
         <SheetHeader>
           <SheetTitle className=" flex flex-row pt-3 pb-1">
             <Image
@@ -33,7 +33,7 @@ const MobileSidebar = () => {
               <li>
                 <Link
                   href="/"
-                  className=" pt-1 px-2 leading-7 text-base  font-[400] text-darkTremor-brand-faint"
+                  className=" pt-1 px-2 leading-7 text-base  font-[400] "
                 >
                   Docs
                 </Link>
@@ -41,7 +41,7 @@ const MobileSidebar = () => {
               <li>
                 <Link
                   href="/"
-                  className=" pt-1 px-2 leading-7 text-base  font-[400] text-darkTremor-brand-faint"
+                  className=" pt-1 px-2 leading-7 text-base  font-[400] "
                 >
                   Blog
                 </Link>
@@ -49,7 +49,7 @@ const MobileSidebar = () => {
               <li>
                 <Link
                   href="/"
-                  className=" pt-1 px-2 leading-7 text-base  font-[400] text-darkTremor-brand-faint"
+                  className=" pt-1 px-2 leading-7 text-base  font-[400] "
                 >
                   Changelog
                 </Link>
@@ -57,7 +57,7 @@ const MobileSidebar = () => {
               <li>
                 <Link
                   href="/"
-                  className=" pt-1 px-2 leading-7 text-base  font-[400] text-darkTremor-brand-faint"
+                  className=" pt-1 px-2 leading-7 text-base  font-[400] "
                 >
                   Roadmap
                 </Link>
