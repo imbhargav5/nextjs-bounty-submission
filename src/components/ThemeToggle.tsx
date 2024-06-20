@@ -8,7 +8,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Laptop, Moon, MoonIcon, MoonStar, MoonStarIcon, Sun } from 'lucide-react';
+import {
+  Laptop,
+  Moon,
+  MoonIcon,
+  MoonStar,
+  MoonStarIcon,
+  Sun,
+} from 'lucide-react';
 
 export function ThemeToggle() {
   const { setTheme } = useTheme();

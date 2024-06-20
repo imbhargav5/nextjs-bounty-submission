@@ -1,9 +1,10 @@
+import { hostname } from 'os';
 
 const nextConfig = {
   experimental: {
     serverActions: {
-      bodySizeLimit: "10mb"
-    }
+      bodySizeLimit: '10mb',
+    },
   },
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
   images: {
@@ -45,6 +46,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'avatar.vercel.sh',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 
@@ -67,4 +74,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig
+export default nextConfig;

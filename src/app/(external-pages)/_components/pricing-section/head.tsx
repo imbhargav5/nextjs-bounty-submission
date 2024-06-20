@@ -1,4 +1,4 @@
-import { DollarSignIcon, NetworkIcon } from 'lucide-react';
+import { DollarSignIcon } from 'lucide-react';
 import { SectionDetails } from '../section/section-details';
 
 export function PricingSectionHead() {

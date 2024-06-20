@@ -129,9 +129,9 @@ export function Pricing() {
 
   const selectedPlans = isMonthly ? plans.monthly : plans.yearly;
   return (
-    <div className="container mx-auto p-4">
+    <div className="flex flex-col items-center mx-auto p-4">
       <PlanToggleButton isMonthly={isMonthly} onToggle={handleToggle} />
-      <div className="flex flex-col lg:flex-row justify-center gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
         {selectedPlans.map((plan, i) => (
           <Plan
             key={i}
@@ -139,8 +139,8 @@ export function Pricing() {
             subtitle={plan.subtitle}
             price={plan.price}
             features={plan.features}
-            isMostPopular={i === 2 ? true : false}
-            isEven={i % 2 !== 0 ? true: false}
+            isMostPopular={i === 1 ? true : false}
+            isOdd={i % 2 !== 0 ? true : false}
           />
         ))}
       </div>

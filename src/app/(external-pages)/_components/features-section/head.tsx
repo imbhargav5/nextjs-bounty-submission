@@ -1,4 +1,3 @@
-
 import { SparklesIcon } from 'lucide-react';
 import { SectionDetails } from '../section/section-details';
 

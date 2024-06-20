@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils';
 import Marquee from '../ui/magicui/marquee';
+import Image from 'next/image';
 
 const reviews = [
   {
@@ -65,7 +66,13 @@ function ReviewCard({
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
+        <Image
+          src={img}
+          alt="profile"
+          className="rounded-full"
+          width="32"
+          height="32"
+        />
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
             {name}

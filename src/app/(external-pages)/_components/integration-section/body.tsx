@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import lightLogo from '../../../../../public/logos/acme-logo-light.png';
-import darkLogo from '../../../../../public/logos/nextbase-dark-logo.png';
+import lightLogo from '@public/logos/nextbase-light-logo.png';
+import darkLogo from '@public/logos/nextbase-dark-logo.png';
 import { useTheme } from 'next-themes';
 import OrbitingCircles from '../ui/magicui/orbiting-circles';
 

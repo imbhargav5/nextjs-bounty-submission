@@ -7,8 +7,8 @@ import {
   SelectTrigger,
 } from '@/components/ui/select';
 import { cn } from '@/utils/cn';
-import acmeLightLogo from '@public/logos/acme-logo-dark.png';
-import acmeDarkLogo from '@public/logos/acme-logo-light.png';
+import LightLogo from '@public/logos/nextbase-dark-logo.png';
+import DarkLogo from '@public/logos/nextbase-light-logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -80,14 +80,14 @@ export function LeftNav() {
         <Link href="/" className={cn('font-bold text-xl ')}>
           <div className="relative flex space-x-2 h-10 md:w-fit items-center justify-center text-black dark:text-white dark:-ml-4 -ml-2 ">
             <Image
-              src={acmeLightLogo}
+              src={DarkLogo}
               width={40}
               height={40}
               alt="logo"
               className="dark:hidden block h-8 w-8"
             />
             <Image
-              src={acmeDarkLogo}
+              src={LightLogo}
               width={40}
               height={40}
               alt="logo"

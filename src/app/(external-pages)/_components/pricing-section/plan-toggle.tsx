@@ -5,18 +5,22 @@ interface ToggleButtonProps {
 
 export function PlanToggleButton({ isMonthly, onToggle }: ToggleButtonProps) {
   return (
-    <div className="flex justify-center mb-8">
+    <div className="flex justify-center items-center mb-8 bg-muted rounded-md p-1 h-[38px] w-[332px]">
       <button
-        className={`px-4 py-2 rounded-l-lg ${
-          isMonthly ? 'bg-blue-500 text-white' : 'bg-gray-200 dark:bg-gray-700'
+        className={`w-full px-3 py-1 rounded-md  ${
+          isMonthly
+            ? 'bg-background text-foreground border'
+            : 'text-muted-foreground'
         }`}
         onClick={onToggle}
       >
         Monthly
       </button>
       <button
-        className={`px-4 py-2 rounded-r-lg ${
-          !isMonthly ? 'bg-blue-500 text-white' : 'bg-gray-200 dark:bg-gray-700'
+        className={`w-full px-3 py-1 rounded-md  ${
+          !isMonthly
+            ? 'bg-background text-foreground border'
+            : 'text-muted-foreground'
         }`}
         onClick={onToggle}
       >

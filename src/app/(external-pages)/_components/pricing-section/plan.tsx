@@ -7,28 +7,46 @@ interface PlanProps {
   price: number;
   features: string[];
   isMostPopular?: boolean;
-  isEven: boolean;
+  isOdd: boolean;
 }
 
-export function Plan({ title, subtitle, price, features }: PlanProps) {
+export function Plan({
+  title,
+  subtitle,
+  price,
+  features,
+  isMostPopular,
+  isOdd,
+}: PlanProps) {
   return (
-    <div className="w-full lg:w-1/3 bg-white dark:bg-darkTremor-background-muted p-6 rounded-lg shadow-lg">
-      
-      <h2 className="text-xl font-semibold text-gray-900 dark:text-darkTremor-content-strong mb-4">
-        {title}
-      </h2>
-      <p className="text-gray-700 dark:text-darkTremor-content-emphasis mb-6">
-        {subtitle}
-      </p>
-      <p className="text-3xl font-bold text-gray-900 dark:text-darkTremor-content-strong mb-6">
-        ${price}
-      </p>
-      <Button
-        className="w-full h-9 py-2 px-4 hover:bg-tremor-primary hover:opacity-95 bg-tremor-primary text-primary-foreground dark:hover:opacity-95
+    <div
+      className={`flex flex-col w-full border dark:border-[#1E293B] dark:border-muted gap-7 ${isOdd ? 'dark:bg-muted' : 'dark:bg-background'} p-5 rounded-lg`}
+    >
+      <div className="flex flex-col gap-4 dark:border-[#1E293B]">
+        <div className="flex justify-between items-center">
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-darkTremor-content-strong">
+            {title}
+          </h2>
+          {isMostPopular && (
+            <span className="text-sm font-semibold bg-darkTremor-content-strong text-primary-foreground dark:text-tremor-primary rounded-md py-[2px] px-[10px]">
+              Most popular
+            </span>
+          )}
+        </div>
+        <p className="text-gray-700 dark:text-darkTremor-content-emphasis -mt-3">
+          {subtitle}
+        </p>
+        <p className="text-3xl font-bold text-gray-900 dark:text-darkTremor-content-strong">
+          ${price}
+        </p>
+        <Button
+          className="w-full h-9 py-2 px-4 hover:bg-tremor-primary hover:opacity-95 bg-tremor-primary text-primary-foreground dark:hover:opacity-95
        dark:bg-tremor-background-muted dark:text-tremor-primary"
-      >
-        Buy now
-      </Button>
+        >
+          Buy now
+        </Button>
+      </div>
+      <hr className='border border-muted mt-3' />
       <ul className="mt-4 space-y-2">
         {features.map((feature, i) => (
           <li
