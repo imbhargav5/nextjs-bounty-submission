@@ -7,8 +7,8 @@ import {
   SelectTrigger,
 } from '@/components/ui/select';
 import { cn } from '@/utils/cn';
-import acmeLightLogo from '@public/logos/acme-logo-dark.png';
-import acmeDarkLogo from '@public/logos/acme-logo-light.png';
+import nextBaseLightLogo from '@public/logos/nextbase-light-logo.png';
+import nextBaseDarkLogo from '@public/logos/nextbase-dark-logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -80,14 +80,14 @@ export function LeftNav() {
         <Link href="/" className={cn('font-bold text-xl ')}>
           <div className="relative flex space-x-2 h-10 md:w-fit items-center justify-center text-black dark:text-white dark:-ml-4 -ml-2">
             <Image
-              src={acmeLightLogo}
+              src={nextBaseLightLogo}
               width={40}
               height={40}
               alt="logo"
               className="dark:hidden block h-8 w-8"
             />
             <Image
-              src={acmeDarkLogo}
+              src={nextBaseDarkLogo}
               width={40}
               height={40}
               alt="logo"
@@ -106,7 +106,7 @@ export function LeftNav() {
           {navbarLinks.map(({ name, href }) => (
             <li
               key={name}
-              className="text-gray-500 dark:text-gray-300 font-regular text-sm hover:text-gray-800 dark:hover:text-gray-500"
+              className="text-gray-500 dark:text-gray-300 font-normal text-sm hover:text-gray-800 dark:hover:text-gray-500"
             >
               <Link href={href}>{name}</Link>
             </li>
@@ -117,7 +117,7 @@ export function LeftNav() {
           {navbarLinks.map(({ name, href }) => (
             <li
               key={name}
-              className="text-gray-500 dark:text-gray-300 font-regular text-sm hover:text-gray-800 dark:hover:text-gray-500"
+              className="text-gray-500 dark:text-gray-300 font-normal text-sm hover:text-gray-800 dark:hover:text-gray-500"
             >
               <Link href={href}>{name}</Link>
             </li>

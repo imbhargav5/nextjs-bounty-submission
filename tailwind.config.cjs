@@ -156,10 +156,34 @@ module.exports = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: 0 },
         },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - 12px))" },
+        },
+        orbit: {
+          "0%": {
+              transform: "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
+          },
+          "100%": {
+              transform: "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
+          },
       },
-      animation: {
-        accordionDown: 'accordion-down 0.2s ease-out',
-        accordionUp: 'accordion-up 0.2s ease-out',
+      "accordion-down": {
+        from: { height: "0" },
+        to: { height: "var(--radix-accordion-content-height)" },
+      },
+      "accordion-up": {
+        from: { height: "var(--radix-accordion-content-height)" },
+        to: { height: "0" },
+      },
+        },
+        animation: {
+          accordionDown: 'accordion-down 0.2s ease-out',
+          accordionUp: 'accordion-up 0.2s ease-out',
+          marquee: "marquee 20s linear infinite",
+          orbit: "orbit calc(var(--duration)*1s) linear infinite",
+          "accordion-down": "accordion-down 0.2s ease-out",
+          "accordion-up": "accordion-up 0.2s ease-out",
       },
       maxWidth: {
         '8xl': '88rem',

@@ -11,7 +11,7 @@ export function ExternalNavigation() {
     <MobileMenuProvider>
       <header className="sticky inset-x-0 w-full top-0 z-50 border-b backdrop-blur">
         <nav
-          className="flex items-center w-full h-[54px] md:container justify-between px-6 md:px-8"
+          className="flex items-center h-[54px] justify-between mx-4"
           aria-label="Global"
         >
           <LeftNav />
@@ -21,7 +21,7 @@ export function ExternalNavigation() {
                 <div className="flex space-x-10 items-center lg:-mr-2"></div>
               }
             >
-              <div className="flex space-x-10 items-center lg:-mr-2">
+              <div className="flex space-x-10 items-center">
                 <ThemeToggle />
                 <div className="ml-6 hidden lg:block" suppressHydrationWarning>
                   <LoginCTAButton />
