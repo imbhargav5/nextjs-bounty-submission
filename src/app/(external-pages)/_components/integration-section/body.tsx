@@ -10,8 +10,8 @@ export function Orbits() {
   const { resolvedTheme } = useTheme();
 
   return (
-    <div className="relative flex h-[500px] w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg bg-background">
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+    <div className="relative flex h-[500px] w-full max-w-[32rem] items-center justify-center rounded-lg bg-background scale-90 md:scale-100">
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-tremor-primary to-foreground bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-foreground dark:to-tremor-primary">
         {resolvedTheme == 'light' ? (
           <Image src={lightLogo} alt="nextbase" width={103} height={103} />
         ) : (

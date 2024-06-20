@@ -46,7 +46,7 @@ export function Plan({
           Buy now
         </Button>
       </div>
-      <hr className='border border-muted mt-3' />
+      <hr className="border border-muted mt-3" />
       <ul className="mt-4 space-y-2">
         {features.map((feature, i) => (
           <li

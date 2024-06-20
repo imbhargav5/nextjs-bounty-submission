@@ -2,12 +2,14 @@ import Image from 'next/image';
 import LightLogo from '@public/logos/nextbase-dark-logo.png';
 import DarkLogo from '@public/logos/nextbase-light-logo.png';
 import { SitewideLinks } from './sitewide-links';
+import Link from 'next/link';
+import { SocialHandles } from './socials';
 
 export function Footer() {
   return (
-    <div className="bg-muted px-14 py-6">
-      <div className="container pt-24 max-w-[1195px]">
-        <div className="flex flex-col md:justify-between lg:flex-row">
+    <div className="bg-muted px-14 py-24 md:py-7">
+      <div className="grid grid-cols-1 px-0 md:pt-24 max-w-[1195px]">
+        <div className="flex flex-col md:justify-between lg:flex-row pb-36 md:pb-0">
           <div className="flex flex-col gap-4 ">
             <div className="flex gap-2 ">
               <Image
@@ -32,8 +34,24 @@ export function Footer() {
           </div>
           <SitewideLinks />
         </div>
-        <hr className="border border-muted mt-3" />
-        <div></div>
+        <hr className="border border-tremor-background-emphasis mt-3" />
+
+        <div className="flex flex-col md:flex-row md:justify-between gap-4 pt-8">
+          <p className="text-muted-foreground">
+            © 2023{' '}
+            <Link
+              className="underline underline-offset-2"
+              href={'https://usenextbase.com/'}
+              target="_blank"
+            >
+              Arni Creative Private Limited.
+            </Link>{' '}
+            All Rights Reserved.
+          </p>
+          <div>
+            <SocialHandles />
+          </div>
+        </div>
       </div>
     </div>
   );
