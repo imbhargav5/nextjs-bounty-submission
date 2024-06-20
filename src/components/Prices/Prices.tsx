@@ -104,7 +104,7 @@ function Prices() {
           Yearly
         </Button>
       </div>
-      <div className="grid grid-cols-3 gap-x-6">
+      <div className="grid grid-cols-3 gap-x-6 max-w-full">
         <PriceCard
           title="Basic"
           label="Best for Small projects"

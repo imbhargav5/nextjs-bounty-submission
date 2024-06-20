@@ -4,9 +4,9 @@ import HeroImage from '@public/assets/hero-image.jpg';
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center">
-      <div className="mt-28">
-        <Button className="mx-auto max-w-md !bg-[#F1F5F9] h-auto space-x-1 rounded-full py-2 px-3 text-black border border-[#E2E8F0] dark:text-neutral-400/50">
+    <div className="flex flex-col lg:items-center px-4">
+      <div className="mt-10 text-left lg:mt-28 ">
+        <Button className="lg:mx-auto max-w-md !bg-[#F1F5F9] h-auto space-x-1 rounded-full py-2 lg:px-3 text-black border border-[#E2E8F0] dark:text-neutral-400/50">
           <svg
             width="16"
             height="16"
@@ -46,18 +46,18 @@ function Hero() {
         </Button>
       </div>
       <div className="mt-4">
-        <h1 className="text-5xl leading-9 font-semibold">
+        <h1 className="text-3xl lg:text-5xl/9 font-semibold">
           Nextbase Ultimate Landing Page
         </h1>
       </div>
-      <div className="text-center max-w-[945px] mt-6">
-        <p className="text-xl font-normal text-[#64748B] ">
+      <div className="text-left lg:text-center max-w-[945px] mt-6">
+        <p className="text-sm/7 lg:text-xl lg:font-normal text-[#64748B] ">
           Welcome to Nextbase Ultimate Landing Page: Your Gateway to Innovation.
           Discover the Future of Excellence and Elevate Your Experience.
         </p>
       </div>
-      <div className="space-x-3 mt-9">
-        <Button className="!bg-black text-white w-[200px] space-x-2">
+      <div className="flex flex-col space-y-3 lg:flex-row lg:space-x-3 mt-9">
+        <Button className="!bg-black text-white lg:w-[200px] space-x-2">
           <span className="text-sm">Log in</span>{' '}
           <svg
             width="16"
@@ -74,7 +74,7 @@ function Hero() {
             />
           </svg>
         </Button>
-        <Button className="!bg-[#F1F5F9] text-black w-[200px] space-x-2">
+        <Button className="!bg-[#F1F5F9] text-black lg:w-[200px] space-x-2">
           <span className="text-sm">Learn more</span>{' '}
           <svg
             width="17"
@@ -91,8 +91,8 @@ function Hero() {
           </svg>
         </Button>
       </div>
-      <div className="mt-16 mb-24">
-        <Image src={HeroImage} width={1104} height={514} alt="hero-image" />
+      <div className="my-12 lg:mt-16 lg:mb-24">
+        <Image src={HeroImage} width={1104} height={514} alt="hero-image" className='h-[514px] rounded-lg' />
       </div>
     </div>
   );

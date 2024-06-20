@@ -24,7 +24,7 @@ function PriceCard({
   list: string[];
 }) {
   return (
-    <Card className={`w-[352px] h-fit ${popular && 'bg-[#E2E8F0]'}`}>
+    <Card className={`max-w-[352px] w-30% h-fit ${popular && 'bg-[#E2E8F0]'}`}>
       <CardHeader className="pb-4">
         <CardTitle className="flex justify-between items-center">
           <p className="text-xl font-semibold">{title}</p>

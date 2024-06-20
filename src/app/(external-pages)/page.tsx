@@ -12,14 +12,14 @@ export default function Page() {
   return (
     <div>
       <Hero />
-      <Company />
+      {/* <Company />
       <Discover />
       <Quote />
       <Integrations />
       <Reviews />
       <Prices />
       <FAQ />
-      <CTA />
+      <CTA /> */}
     </div>
   );
 }
