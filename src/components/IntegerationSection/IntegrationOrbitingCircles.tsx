@@ -1,12 +1,26 @@
 import OrbitingCircles from '@/components/magicui/orbiting-circles';
+import Image from 'next/image';
+import nextbaseLightLogo from '@public/logos/nextbase-dark-logo.png';
+import nextbaseDarkLogo from '@public/logos/nextbase-light-logo.png';
+
 
 export function IntegrationOrbitingCircles() {
   return (
     <div className="relative flex h-[500px] w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg  bg-background ">
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-        n
-      </span>
-
+      <Image
+        src={nextbaseDarkLogo}
+        width={80}
+        height={80}
+        alt="logo"
+        className="dark:hidden block h-12 w-12"
+      />
+      <Image
+        src={nextbaseLightLogo}
+        width={80}
+        height={80}
+        alt="logo"
+        className="hidden dark:block h-12 w-12"
+      />
       {/* Inner Circles */}
       <OrbitingCircles
         className="h-[30px] w-[30px] border-none bg-transparent"
