@@ -7,8 +7,8 @@ import {
   SelectTrigger,
 } from '@/components/ui/select';
 import { cn } from '@/utils/cn';
-import acmeLightLogo from '@public/logos/acme-logo-dark.png';
-import acmeDarkLogo from '@public/logos/acme-logo-light.png';
+import darkLogo from '@public/logos/nextbase-dark-logo.png';
+import lightLogo from '@public/logos/nextbase-light-logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -80,29 +80,29 @@ export function LeftNav() {
         <Link href="/" className={cn('font-bold text-xl ')}>
           <div className="relative flex space-x-2 h-10 md:w-fit items-center justify-center text-black dark:text-white dark:-ml-4 -ml-2">
             <Image
-              src={acmeLightLogo}
+              src={lightLogo}
               width={40}
               height={40}
               alt="logo"
-              className="dark:hidden block h-8 w-8"
+              className="dark:hidden hidden lg:block h-8 w-8"
             />
             <Image
-              src={acmeDarkLogo}
+              src={darkLogo}
               width={40}
               height={40}
               alt="logo"
-              className="hidden dark:block h-8 w-8"
+              className="hidden dark:hidden dark:lg:block  lg:hidden h-8 w-8"
             />
             {isBlogPage && <span className="font-bold">Nextbase Blog</span>}
             {isDocsPage && <span className="font-bold">Nextbase Docs</span>}
             {!isBlogPage && !isDocsPage && (
-              <span className="font-bold">Nextbase</span>
+              <span className="font-bold hidden lg:block">Nextbase</span>
             )}
           </div>
         </Link>
       </div>
       {isALandingPage ? (
-        <ul className="hidden -ml-24 lg:flex gap-8 font-medium items-center">
+        <ul className="hidden  lg:flex gap-8 font-medium items-center">
           {navbarLinks.map(({ name, href }) => (
             <li
               key={name}

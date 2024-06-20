@@ -6,42 +6,11 @@ import darkLogo from '@public/logos/acme-logo-light.png';
 import { PanelLeft } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
-import { ComponentProps, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 import { DocsNavigation } from './DocsNavigation';
 
-function MenuIcon(props: ComponentProps<'svg'>) {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="2"
-      strokeLinecap="round"
-      {...props}
-    >
-      <path d="M4 7h16M4 12h16M4 17h16" />
-    </svg>
-  );
-}
-
-function CloseIcon(props: ComponentProps<'svg'>) {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="2"
-      strokeLinecap="round"
-      {...props}
-    >
-      <path d="M5 5l14 14M19 5l-14 14" />
-    </svg>
-  );
-}
-
 export function DocsMobileNavigation() {
-  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const isDocs = pathname ? pathname.startsWith('/docs') : false;
