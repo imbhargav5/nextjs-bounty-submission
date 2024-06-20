@@ -12,14 +12,19 @@ export function ExternalNavigationCTAButton({
   const text = isLoggedIn ? 'Dashboard' : 'Log In';
   return (
     <Link href={href} className="w-full">
-      <Button variant="default" size="default" className="group w-full">
+      {/* changed button style */}
+      <Button
+        variant="default"
+        size="default"
+        className="group w-full inline-flex bg-slate-50 border-0 py-0 px-4 focus:outline-none rounded text-base text-slate-800"
+      >
         {isLoading ? (
           'Please wait...'
         ) : (
           <>
             {text}
             <svg
-              className="ml-2 -mr-1 w-5 h-5 group-hover:translate-x-1 transition"
+              className="ml-2 -mr-1 w-4 h-4 group-hover:translate-x-1 transition"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
