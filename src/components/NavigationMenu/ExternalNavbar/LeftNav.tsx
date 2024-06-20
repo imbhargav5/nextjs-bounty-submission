@@ -7,8 +7,8 @@ import {
   SelectTrigger,
 } from '@/components/ui/select';
 import { cn } from '@/utils/cn';
-import acmeLightLogo from '@public/logos/acme-logo-dark.png';
-import acmeDarkLogo from '@public/logos/acme-logo-light.png';
+import acmeLightLogo from '@public/logos/nextbase-light-logo.png';
+import acmeDarkLogo from '@public/logos/nextbase-dark-logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -75,8 +75,8 @@ export function LeftNav() {
   }, [pathname]);
   return (
     <>
-      <DocsMobileNavigation />
-      <div className="flex space-x-8">
+ 
+      <div className="flex md:space-x-8 hidden md:block ">
         <Link href="/" className={cn('font-bold text-xl ')}>
           <div className="relative flex space-x-2 h-10 md:w-fit items-center justify-center text-black dark:text-white dark:-ml-4 -ml-2">
             <Image
@@ -96,17 +96,17 @@ export function LeftNav() {
             {isBlogPage && <span className="font-bold">Nextbase Blog</span>}
             {isDocsPage && <span className="font-bold">Nextbase Docs</span>}
             {!isBlogPage && !isDocsPage && (
-              <span className="font-bold">Nextbase</span>
+              <span className="font-semibold">Nextbase</span>
             )}
           </div>
         </Link>
       </div>
       {isALandingPage ? (
-        <ul className="hidden -ml-24 lg:flex gap-8 font-medium items-center">
+        <ul className=" hidden  lg:flex gap-8 font-medium items-center">
           {navbarLinks.map(({ name, href }) => (
             <li
               key={name}
-              className="text-gray-500 dark:text-gray-300 font-regular text-sm hover:text-gray-800 dark:hover:text-gray-500"
+              className="text-gray-500 dark:text-[#94A3B8] font-regular text-sm hover:text-gray-800 dark:hover:text-gray-200 "
             >
               <Link href={href}>{name}</Link>
             </li>
