@@ -61,6 +61,7 @@ const HeroSection = () => {
             height: '514px',
             objectFit: 'cover',
             objectPosition: 'center',
+            borderRadius: '8px',
           }} // optional
         />
       </div>
