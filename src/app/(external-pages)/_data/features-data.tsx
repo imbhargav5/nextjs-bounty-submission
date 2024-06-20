@@ -41,14 +41,17 @@ export const featuresData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     background: (
-      <Command className="absolute -right-5 top-10 w-[70%] origin-top translate-x-0 border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10">
+      <Command
+        value="0"
+        className="absolute -right-5 top-10 w-[70%] origin-top translate-x-0 border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10"
+      >
         <CommandInput
           className="border-none focus:ring-0"
           placeholder="Type a command or search..."
         />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
-          <CommandGroup heading="Suggestions">
+          <CommandGroup className="pointer-events-none" heading="Suggestions">
             <CommandItem>screenshot.png</CommandItem>
             <CommandItem>bitcoin.pdf</CommandItem>
             <CommandItem>finances.xlsx</CommandItem>
