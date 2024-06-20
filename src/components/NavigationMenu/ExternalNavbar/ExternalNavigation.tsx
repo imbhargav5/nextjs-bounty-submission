@@ -23,8 +23,8 @@ export function ExternalNavigation() {
             >
               <div className="flex space-x-10 items-center lg:-mr-2">
                 <ThemeToggle />
-                <div className="ml-6 hidden lg:block" suppressHydrationWarning>
-                  <LoginCTAButton />
+                <div className="ml-6 hidden lg:block  " suppressHydrationWarning>
+                  <LoginCTAButton  />
                 </div>
               </div>
             </Suspense>

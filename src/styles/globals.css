@@ -73,3 +73,51 @@
 .docs-main-contents > div {
   @apply max-w-[720px] mx-auto;
 }
+
+.para{
+  color: #64748B;
+}
+
+.paraB{
+  color: #94A3B8;
+}
+
+.logoCol{
+  color: #0F172A;
+}
+
+@keyframes slide {
+  from{
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.logos{
+  overflow: hidden; 
+  padding: 60px 0px;
+  
+  white-space: nowrap;
+  
+
+}
+
+.logos:hover .logoslide {
+  animation-play-state: paused;
+}
+
+.logoslide{
+  
+  display: inline-flex;
+  justify-content: space-evenly;
+  animation: 16s slide infinite linear;
+  
+}
+
+.logoslide img {
+  height: 30px;
+  margin: 0 90px;
+}
