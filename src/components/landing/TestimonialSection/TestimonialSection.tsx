@@ -4,7 +4,6 @@ import SectionDescription from '../../_common/SectionDescription';
 import { ScrollingTestimonials } from './ScrolllingTestimonials';
 
 const TestimonialSection = () => {
-  // TODO : REMOVE HARDCODED VALUES
   return (
     <section className=" px-4 flex flex-col items-center bg-muted md:py-24  py-12">
       <div className=" flex flex-col gap-12">

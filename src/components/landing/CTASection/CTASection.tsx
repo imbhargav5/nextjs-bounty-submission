@@ -6,7 +6,6 @@ import SectionDescription from '../../_common/SectionDescription';
 import SectionLink from '../../_common/SectionLink';
 
 const CTASection = () => {
-  // TODO : REMOVE HARDCODED VALUES
   return (
     <section className="px-4 pt-12 pb-16 md:container">
       <div className=" flex flex-col md:items-center items-start gap-2">
