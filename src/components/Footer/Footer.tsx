@@ -6,6 +6,8 @@ import { FaGithub } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
 import { Separator } from '../ui/separator';
 
+// TODO : REMOVE HARDCODED VALUES
+
 export function Footer() {
   return (
     <footer className="bg-muted min-h-[200px] text-background flex flex-col md:px-14 md:py-6 border border-border">

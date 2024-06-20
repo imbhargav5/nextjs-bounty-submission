@@ -8,8 +8,8 @@ import SectionLink from '../../_common/SectionLink';
 const FeatureSection = () => {
   return (
     <section className=" flex flex-col px-4 pt-12 pb-24">
-      <div className=" container flex flex-col gap-12">
-        <div className=" md:mx-[191px] flex flex-col gap-4">
+      <div className=" md:container flex flex-col gap-12">
+        <div className=" md:container flex flex-col gap-4">
           <div>
             <div className="pb-4 flex md:justify-center justify-start">
               <SectionLink icon={Sparkles} href="/">

@@ -32,7 +32,7 @@ const FAQs = [
 
 const FAQSection = () => {
   return (
-    <section className="  flex flex-col items-center container px-4 py-24  ">
+    <section className="  flex flex-col items-center md:container px-4 py-24  ">
       <div className=" flex flex-col gap-12">
         <div className=" flex flex-col gap-4">
           <div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const PricingTabs = () => {
+  // TODO : REMOVE HARDCODED VALUES
   return (
     <Tabs defaultValue="account" className="md:w-[400px] ">
       <TabsList className=" bg-muted">

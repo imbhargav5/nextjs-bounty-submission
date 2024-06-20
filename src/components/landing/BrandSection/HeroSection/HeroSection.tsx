@@ -5,25 +5,20 @@ import Image from 'next/image';
 import SectionTitle from '../../../_common/SectionTitle';
 import SectionDescription from '../../../_common/SectionDescription';
 import SectionLink from '../../../_common/SectionLink';
+import HeroImage from '@public/images/hero-image.png';
 
 const HeroSection = () => {
   return (
-    <section className=" container flex flex-col gap-16  px-4 md:pt-16 pt-[10px] pb-12 md:pb-24  ">
+    <section className=" md:container flex flex-col gap-16  px-4 md:pt-16 pt-[10px] pb-12 md:pb-24  ">
       <div
         id="text-div"
         className=" flex flex-col gap-8 items-center md:pt-12 pt-8 "
       >
         <div className=" flex flex-col md:items-center">
           <div className="pb-4 flex md:justify-center justify-start">
-            {/* <Link
-              className="flex gap-1 flex-row w-[192px] text-sm items-center bg-muted rounded-[80px] px-3 py-1 whitespace-nowrap  border dark:border-background"
-              href="/#"
-            >
-              <Sparkles />
-              <span>Introducing</span>
-              <ArrowRight />
-            </Link> */}
-            <SectionLink icon={Sparkles} href='/'>Introducing</SectionLink>
+            <SectionLink icon={Sparkles} href="/">
+              Introducing
+            </SectionLink>
           </div>
           <SectionTitle hero value="Nextbase Ultimate Landing Page" />
         </div>
@@ -53,7 +48,7 @@ const HeroSection = () => {
       <div className=" ">
         <Image
           alt="hero-image"
-          src={'/images/hero-image.png'}
+          src={HeroImage}
           width={0}
           height={0}
           sizes="100vw"
@@ -63,7 +58,7 @@ const HeroSection = () => {
             objectFit: 'cover',
             objectPosition: 'center',
             borderRadius: '8px',
-          }} // optional
+          }}
         />
       </div>
     </section>

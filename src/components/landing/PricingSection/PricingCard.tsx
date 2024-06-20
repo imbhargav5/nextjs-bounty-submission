@@ -19,6 +19,9 @@ interface PricingCardProps {
   description: string;
   badge?: string;
 }
+
+// TODO : REMOVE HARDCODED VALUES
+
 const PricingCard: FC<PricingCardProps> = ({
   features,
   title,

@@ -41,3 +41,27 @@ export const premiumFeatures = [
   'Premium CDN Services',
   'Ongoing Website Maintenance and Updates',
 ];
+
+export const features = [
+  {
+    title: 'Basic',
+    features: basicFeatures,
+    price: 99,
+    description: 'Best for Small projects',
+    badge : undefined
+  },
+  {
+    title: 'Standard',
+    features: standardFeatures,
+    price: 99,
+    description: 'Best for Large projects',
+    badge : 'Most popular'
+  },
+  {
+    title: 'Premium',
+    features: premiumFeatures,
+    price: 99,
+    description: 'Best for organization',
+    badge : undefined
+  },
+];
