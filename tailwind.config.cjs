@@ -22,6 +22,7 @@ module.exports = {
     extend: {
       colors: {
         tremor: {
+          primary: '#0F172A',
           brand: {
             faint: '#eff6ff', // blue-50
             muted: '#bfdbfe', // blue-200
@@ -147,6 +148,17 @@ module.exports = {
         sans: ['var(--font-satoshi)'],
         display: ['Lexend', ...defaultTheme.fontFamily.sans],
       },
+      maxWidth: {
+        '8xl': '88rem',
+      },
+      animation: {
+        accordionDown: 'accordion-down 0.2s ease-out',
+        accordionUp: 'accordion-up 0.2s ease-out',
+        'logo-cloud': 'logo-cloud 30s linear infinite', // Adjust duration and timing as needed for your design.
+        orbit: 'orbit calc(var(--duration)*1s) linear infinite',
+        marquee: 'marquee var(--duration) linear infinite',
+        'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+      },
       keyframes: {
         accordionDown: {
           from: { height: 0 },
@@ -156,13 +168,28 @@ module.exports = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: 0 },
         },
-      },
-      animation: {
-        accordionDown: 'accordion-down 0.2s ease-out',
-        accordionUp: 'accordion-up 0.2s ease-out',
-      },
-      maxWidth: {
-        '8xl': '88rem',
+        'logo-cloud': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - 4rem))' },
+        },
+        orbit: {
+          '0%': {
+            transform:
+              'rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)',
+          },
+          '100%': {
+            transform:
+              'rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)',
+          },
+        },
+        marquee: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - var(--gap)))' },
+        },
+        'marquee-vertical': {
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(calc(-100% - var(--gap)))' },
+        },
       },
     },
   },

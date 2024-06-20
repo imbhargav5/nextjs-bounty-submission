@@ -8,7 +8,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Laptop, Moon, Sun } from 'lucide-react';
+import {
+  Laptop,
+  Moon,
+  MoonIcon,
+  MoonStar,
+  MoonStarIcon,
+  Sun,
+} from 'lucide-react';
 
 export function ThemeToggle() {
   const { setTheme } = useTheme();
@@ -25,7 +32,7 @@ export function ThemeToggle() {
           className="h-5 w-5 px-0 text-muted-foreground focus:ring-0"
         >
           <Sun className="rotate-0 scale-100 transition-all dark:-rotate-90 hover:text-black dark:scale-0" />
-          <Moon className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 dark:hover:text-white" />
+          <MoonStarIcon className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 dark:hover:text-white" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
