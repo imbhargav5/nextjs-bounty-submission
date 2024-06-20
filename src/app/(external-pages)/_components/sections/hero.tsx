@@ -26,12 +26,12 @@ export default function Hero() {
             Innovation. Discover the Future of Excellence and Elevate Your
             Experience.
           </p>
-          <div className="flex items-center max-w-md w-full  gap-3 pt-2 ">
-            <Button className="lg:w-full">
+          <div className="flex flex-col md:flex-row items-center max-w-md w-full  gap-3 pt-2 ">
+            <Button className="w-full">
               Log In
               <ArrowRight size={16} className="ml-2" />
             </Button>
-            <Button className="lg:w-full" variant={'secondary'}>
+            <Button className="w-full" variant={'secondary'}>
               Learn More
               <ChevronRight size={16} className="ml-2" />
             </Button>
