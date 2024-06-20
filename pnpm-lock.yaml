@@ -288,7 +288,7 @@ importers:
         specifier: ^0.7.0
         version: 0.7.0
       clsx:
-        specifier: ^2.1.0
+        specifier: ^2.1.1
         version: 2.1.1
       cmdk:
         specifier: ^1.0.0
@@ -321,7 +321,7 @@ importers:
         specifier: ^3.5.0
         version: 3.5.1
       framer-motion:
-        specifier: ^11.0.0
+        specifier: ^11.2.10
         version: 11.2.10(@emotion/is-prop-valid@0.7.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       geist:
         specifier: ^1.1.0
@@ -483,10 +483,10 @@ importers:
         specifier: ^14.10.0
         version: 14.25.0
       tailwind-merge:
-        specifier: ^2.2.1
+        specifier: ^2.3.0
         version: 2.3.0
       tailwindcss:
-        specifier: ^3.4.1
+        specifier: ^3.4.4
         version: 3.4.4
       tailwindcss-animate:
         specifier: ^1.0.7
