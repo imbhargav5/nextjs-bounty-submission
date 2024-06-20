@@ -7,9 +7,9 @@ import { SocialHandles } from './socials';
 
 export function Footer() {
   return (
-    <div className="bg-muted px-14 py-24 md:py-7">
+    <div className="flex w-full justify-center bg-muted px-14 py-24 md:py-7">
       <div className="grid grid-cols-1 px-0 md:pt-24 max-w-[1195px]">
-        <div className="flex flex-col md:justify-between lg:flex-row pb-36 md:pb-0">
+        <div className="flex flex-col lg:gap-72 xl:gap-[470px] md:justify-between lg:flex-row pb-36 md:pb-0">
           <div className="flex flex-col gap-4 ">
             <div className="flex gap-2 ">
               <Image
