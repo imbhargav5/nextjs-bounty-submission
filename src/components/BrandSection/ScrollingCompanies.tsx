@@ -1,10 +1,10 @@
-import Airbnb from '../icons/Airbnb';
-import Google from '../icons/Google';
-import Microsoft from '../icons/Microsoft';
-import Spotify from '../icons/Spotify';
-import MailChimp from '../icons/MailChimp';
-import Mashable from '../icons/Mashable';
-import Marquee from '../magicui/marquee';
+import Airbnb from '../../icons/Airbnb';
+import Google from '../../icons/Google';
+import Microsoft from '../../icons/Microsoft';
+import Spotify from '../../icons/Spotify';
+import MailChimp from '../../icons/MailChimp';
+import Mashable from '../../icons/Mashable';
+import Marquee from '../../magicui/marquee';
 
 const companies: { name: string; icon: (() => React.JSX.Element) | null }[] = [
   {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { FeaturesBento } from './FeaturesBento';
-import Link from 'next/link';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
+import SectionLink from '../_common/SectionLink';
 
 const FeatureSection = () => {
   return (
@@ -12,14 +12,9 @@ const FeatureSection = () => {
         <div className=" md:mx-[191px] flex flex-col gap-4">
           <div>
             <div className="pb-4 flex md:justify-center justify-start">
-              <Link
-                className="flex gap-1 flex-row w-[192px] text-sm items-center bg-muted rounded-[80px] px-3 py-1 whitespace-nowrap  border dark:border-background"
-                href="/#"
-              >
-                <Sparkles />
-                <span>Start your journey</span>
-                <ArrowRight />
-              </Link>
+              <SectionLink icon={Sparkles} href="/">
+                Start your journey
+              </SectionLink>
             </div>
             <SectionTitle className="" value="Discover Next-Level Features" />
           </div>

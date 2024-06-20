@@ -1,4 +1,4 @@
-import BrandSection from '@/components/BrandSection/BrandSection';
+import BrandSection from '@/components/landing/BrandSection/BrandSection';
 import CTASection from '@/components/CTASection/CTASection';
 import FAQSection from '@/components/FAQSection/FAQSection';
 import FeatureSection from '@/components/FeatureSection/FeatureSection';

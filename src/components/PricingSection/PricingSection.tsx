@@ -1,11 +1,11 @@
 import React from 'react';
-import { ArrowRight, DollarSignIcon } from 'lucide-react';
+import { DollarSignIcon } from 'lucide-react';
 import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
 import PricingCard from './PricingCard';
 import { basicFeatures, premiumFeatures, standardFeatures } from './constants';
 import PricingTabs from './PricingTabs';
-import Link from 'next/link';
+import SectionLink from '../_common/SectionLink';
 
 const PricingSection = () => {
   return (
@@ -14,14 +14,9 @@ const PricingSection = () => {
         <div className=" flex flex-col gap-4 container">
           <div>
             <div className="pb-4 flex md:justify-center justify-start">
-              <Link
-                className="flex gap-1 flex-row w-[119px] text-sm items-center bg-muted rounded-[80px] px-3 py-1 whitespace-nowrap  border dark:border-background"
-                href="/#"
-              >
-                <DollarSignIcon />
-                <span>Pricing</span>
-                <ArrowRight />
-              </Link>
+              <SectionLink icon={DollarSignIcon} href="/">
+              Pricing
+              </SectionLink>
             </div>
             <SectionTitle value="Quality without any compromise" />
           </div>

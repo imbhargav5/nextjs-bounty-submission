@@ -5,11 +5,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { ArrowRight } from 'lucide-react';
 import { QuestionMarkIcon } from '@radix-ui/react-icons';
 import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
-import Link from 'next/link';
+import SectionLink from '../_common/SectionLink';
 
 const FAQs = [
   {
@@ -38,14 +37,9 @@ const FAQSection = () => {
         <div className=" flex flex-col gap-4">
           <div>
             <div className="pb-4 flex md:justify-center justify-start">
-              <Link
-                className="flex gap-1 flex-row w-[192px] text-sm items-center bg-muted rounded-[80px] px-3 py-1 whitespace-nowrap  border dark:border-background"
-                href="/#"
-              >
-                <QuestionMarkIcon />
-                <span>Start your journey</span>
-                <ArrowRight />
-              </Link>
+              <SectionLink icon={QuestionMarkIcon} href="/">
+                FAQ
+              </SectionLink>
             </div>
             <SectionTitle value="FAQs" />
           </div>

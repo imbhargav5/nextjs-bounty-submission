@@ -4,7 +4,7 @@ import { ArrowRight, ChevronRight, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
-import Link from 'next/link';
+import SectionLink from '../_common/SectionLink';
 
 const HeroSection = () => {
   return (
@@ -15,14 +15,15 @@ const HeroSection = () => {
       >
         <div className=" flex flex-col md:items-center">
           <div className="pb-4 flex md:justify-center justify-start">
-            <Link
+            {/* <Link
               className="flex gap-1 flex-row w-[192px] text-sm items-center bg-muted rounded-[80px] px-3 py-1 whitespace-nowrap  border dark:border-background"
               href="/#"
             >
               <Sparkles />
-              <span>Start your journey</span>
+              <span>Introducing</span>
               <ArrowRight />
-            </Link>
+            </Link> */}
+            <SectionLink icon={Sparkles} href='/'>Introducing</SectionLink>
           </div>
           <SectionTitle hero value="Nextbase Ultimate Landing Page" />
         </div>

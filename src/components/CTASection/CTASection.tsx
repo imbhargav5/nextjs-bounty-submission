@@ -1,9 +1,9 @@
 import React from 'react';
-import { ArrowRight, Sailboat } from 'lucide-react';
+import { Sailboat } from 'lucide-react';
 import { Button } from '../ui/button';
 import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
-import Link from 'next/link';
+import SectionLink from '../_common/SectionLink';
 
 const CTASection = () => {
   return (
@@ -12,14 +12,9 @@ const CTASection = () => {
         <div className=" container flex flex-col gap-4">
           <div>
             <div className="pb-4 flex md:justify-center justify-start">
-              <Link
-                className="flex gap-1 flex-row w-[192px] text-sm items-center bg-muted rounded-[80px] px-3 py-1 whitespace-nowrap  border dark:border-background"
-                href="/#"
-              >
-                <Sailboat />
-                <span>Start your journey</span>
-                <ArrowRight />
-              </Link>
+              <SectionLink icon={Sailboat} href="/">
+                Start your journey
+              </SectionLink>
             </div>
             <div>
               <SectionTitle className="" value="Ready to move with Ultimate?" />

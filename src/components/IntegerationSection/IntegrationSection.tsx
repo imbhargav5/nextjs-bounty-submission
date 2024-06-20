@@ -1,9 +1,9 @@
 import React from 'react';
 import { IntegrationOrbitingCircles } from './IntegrationOrbitingCircles';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import {  Network } from 'lucide-react';
 import SectionTitle from '../_common/SectionTitle';
 import SectionDescription from '../_common/SectionDescription';
-import Link from 'next/link';
+import SectionLink from '../_common/SectionLink';
 
 const IntegrationSection = () => {
   return (
@@ -12,14 +12,7 @@ const IntegrationSection = () => {
         <div className=" flex flex-col gap-4">
           <div>
             <div className="pb-4 flex md:justify-center justify-start">
-              <Link
-                className="flex gap-1 flex-row w-[145px] text-sm items-center bg-muted rounded-[80px] px-3 py-1 whitespace-nowrap  border dark:border-background"
-                href="/#"
-              >
-                <Sparkles />
-                <span>Integration</span>
-                <ArrowRight />
-              </Link>
+              <SectionLink icon={Network} href='/'>Integration</SectionLink>
             </div>
             <SectionTitle value="Master Integration Like Pros" />
           </div>
