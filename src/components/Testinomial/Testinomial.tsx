@@ -12,7 +12,7 @@ const Testinomial = () => {
         <P className="para paraB  md:text-xl font-normal  leading-7">Hear what our satisfied customers have to say about Nextbase</P>
         
        </div>
-       <div>
+       <div className='w-screen md:h-full bg-transparent '>
         <MarqueeCard/>
        </div>
      </div>

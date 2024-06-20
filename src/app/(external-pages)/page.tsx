@@ -18,7 +18,7 @@ const page = () => {
       <FeatureCard />
       <Quotetion />
       <IntegrationSec />
-      {/* <Testinomial />    */}
+      <Testinomial />   
       {/* Testinomial error de rha h  */}
       <Pricing />
       <FAQ />
