@@ -15,7 +15,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={GeistSans.className} suppressHydrationWarning>
+    <html lang="en" className={`${GeistSans.className} overflow-x-hidden`} suppressHydrationWarning>
       <head></head>
       <body className="">
         <AppProviders>{children}</AppProviders>
