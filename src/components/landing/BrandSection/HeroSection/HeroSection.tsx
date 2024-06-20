@@ -32,10 +32,10 @@ const HeroSection = () => {
           <SectionDescription value="Welcome to Nextbase Ultimate Landing Page: Your Gateway to Innovation. Discover the Future of Excellence and Elevate Your Experience." />
         </div>
 
-        <div className=" w-full md:w-auto flex md:flex-row flex-col  gap-3 pt-3">
+        <div className="  max-w-md w-full flex md:flex-row flex-col  gap-3 pt-3">
           <Button
             variant="default"
-            className="  py-2 px-4  md:w-[200px] flex flex-grow md:flex-grow-0 gap-2"
+            className="  py-2 px-4  w-full flex flex-grow md:flex-grow-0 gap-2"
           >
             Login
             <ArrowRight />
@@ -43,7 +43,7 @@ const HeroSection = () => {
           <Button
             variant="secondary"
             size="default"
-            className="  py-2 px-4  md:w-[200px] flex flex-grow md:flex-grow-0 gap-2 "
+            className="  py-2 px-4  w-full flex flex-grow md:flex-grow-0 gap-2 "
           >
             Learn More
             <ChevronRight />
