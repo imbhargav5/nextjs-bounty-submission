@@ -7,6 +7,8 @@ import { Card, CardContent } from '../ui/card'
 import { BentoDemo } from '../BentoDemo/BentoDemo'
 import { Button } from '../ui/button'
 import { ArrowRight, Sparkle } from 'lucide-react'
+import { BentoCard, BentoGrid } from '../magicui/bento-grid'
+import { allcardinfo } from './allcardinfo'
 
 const FeatureCard = () => {
   return (
@@ -17,10 +19,21 @@ const FeatureCard = () => {
         <P className='para paraB md:text-xl font-normal leading-7 mt-2 md:mt-4'>Discover the ultimate insights into cutting-edge advancements. Our next-level <br /> features guide reveals the essentials for staying ahead.</P>
       </div>
 
-      <div className='flex flex-col md:flex-row justify-start md:justify-center items-center text-start md:text-center p-6  md:p-44'>
+      {/* <div className='flex flex-col md:flex-row justify-start md:justify-center items-center text-start md:text-center p-6  md:p-44'>
         <BentoDemo />
-      </div>
-      <div>3</div>
+      </div> */}
+
+<BentoGrid className="grid-cols-1 md:grid-cols-2">
+        {allcardinfo.slice(0, 2).map((feature, idx) => (
+          <BentoCard key={idx} {...feature} />
+        ))}
+      </BentoGrid>
+      <BentoGrid className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {allcardinfo.slice(2, 5).map((feature, idx) => (
+          <BentoCard key={idx} {...feature} />
+        ))}
+      </BentoGrid>
+      
     </div>
   )
 }

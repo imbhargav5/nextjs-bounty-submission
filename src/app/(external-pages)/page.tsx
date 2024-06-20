@@ -15,7 +15,7 @@ const page = () => {
     <div>
       <Home />
       <LogoScroll />
-      <FeatureCard />
+      {/* <FeatureCard /> */}
       <Quotetion />
       <IntegrationSec />
       <Testinomial />   
