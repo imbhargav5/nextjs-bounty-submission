@@ -12,7 +12,7 @@ const GLOBE_CONFIG: COBEOptions = {
   devicePixelRatio: 2,
   phi: 0,
   theta: 0.3,
-  dark: 0,
+  dark: 1,
   diffuse: 0.4,
   mapSamples: 16000,
   mapBrightness: 1.2,
@@ -111,11 +111,13 @@ export default function Globe({
           'h-full w-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]',
         )}
         ref={canvasRef}
-        onPointerDown={(e) =>
-          updatePointerInteraction(
-            e.clientX - pointerInteractionMovement.current,
-          )
-        }
+        onPointerDown={(e) => {
+          if (canvasRef.current) {
+            updatePointerInteraction(
+              e.clientX - pointerInteractionMovement.current,
+            );
+          }
+        }}
         onPointerUp={() => updatePointerInteraction(null)}
         onPointerOut={() => updatePointerInteraction(null)}
         onMouseMove={(e) => updateMovement(e.clientX)}

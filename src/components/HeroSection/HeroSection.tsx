@@ -8,10 +8,10 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <section className="  flex flex-col gap-16 md:px-52 px-4 md:pt-16 pt-[10px] pb-12 md:pb-24  ">
+    <section className=" container flex flex-col gap-16  px-4 md:pt-16 pt-[10px] pb-12 md:pb-24  ">
       <div
         id="text-div"
-        className=" flex flex-col gap-8 items-center md:pt-12 pt-8 md:mx-20"
+        className=" flex flex-col gap-8 items-center md:pt-12 pt-8 "
       >
         <div className=" flex flex-col md:items-center">
           <div className="pb-4 flex md:justify-center justify-start">
@@ -49,7 +49,7 @@ const HeroSection = () => {
           </Button>
         </div>
       </div>
-      <div>
+      <div className=" ">
         <Image
           alt="hero-image"
           src={'/images/hero-image.png'}

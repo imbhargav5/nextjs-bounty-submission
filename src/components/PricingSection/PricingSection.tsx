@@ -10,8 +10,8 @@ import Link from 'next/link';
 const PricingSection = () => {
   return (
     <section className="px-4 md:px-0 flex flex-col items-center py-24 ">
-      <div className=" flex flex-col gap-12 md:mx-[204px]">
-        <div className=" flex flex-col gap-4 md:mx-[188px]">
+      <div className=" flex flex-col gap-12 container">
+        <div className=" flex flex-col gap-4 container">
           <div>
             <div className="pb-4 flex md:justify-center justify-start">
               <Link
@@ -34,7 +34,7 @@ const PricingSection = () => {
             <PricingTabs />
           </div>
           <div>
-            <div className=" grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className=" grid grid-cols-1 lg:grid-cols-3 gap-6">
               <PricingCard
                 description="Best for Small projects"
                 price={99}

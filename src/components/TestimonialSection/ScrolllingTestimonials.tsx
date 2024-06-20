@@ -58,7 +58,7 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4 bg-white',
+        'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4 bg-background',
         // light styles
         'border-gray-950/[.1]  hover:bg-gray-950/[.05]',
         // dark styles
@@ -93,8 +93,8 @@ export const ScrollingTestimonials = () => {
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-muted dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-muted dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-muted "></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-muted "></div>
     </div>
   );
 };

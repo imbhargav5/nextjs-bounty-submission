@@ -7,9 +7,9 @@ import Link from 'next/link';
 
 const CTASection = () => {
   return (
-    <section className="px-4 pt-12 pb-16 md:px-[203px]">
+    <section className="px-4 pt-12 pb-16 container">
       <div className=" flex flex-col md:items-center items-start gap-2">
-        <div className=" md:mx-[188px] flex flex-col gap-4">
+        <div className=" container flex flex-col gap-4">
           <div>
             <div className="pb-4 flex md:justify-center justify-start">
               <Link

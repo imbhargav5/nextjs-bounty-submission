@@ -8,7 +8,7 @@ import SectionDescription from '../_common/SectionDescription';
 const FeatureSection = () => {
   return (
     <div className=" flex flex-col px-4 pt-12 pb-24">
-      <div className=" md:mx-[204px] flex flex-col gap-12">
+      <div className=" container flex flex-col gap-12">
         <div className=" md:mx-[191px] flex flex-col gap-4">
           <div>
             <div className="pb-4 flex md:justify-center justify-start">

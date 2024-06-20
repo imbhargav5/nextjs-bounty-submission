@@ -8,7 +8,6 @@ interface MarqueeProps {
   childrenClassName?: string;
   vertical?: boolean;
   repeat?: number;
-  [key: string]: any;
 }
 
 export default function Marquee({

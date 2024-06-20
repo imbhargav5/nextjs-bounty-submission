@@ -8,9 +8,9 @@ import { Separator } from '../ui/separator';
 
 export function Footer() {
   return (
-    <footer className="bg-tremor-background-muted min-h-[200px] text-background flex flex-col md:px-14 md:py-6 border border-border">
-      <div className=" md:mx-[102px] px-8 pt-24">
-        <div className="flex md:flex-row flex-col justify-between pb-24 md:mb-0 mb-8">
+    <footer className="bg-muted min-h-[200px] text-background flex flex-col md:px-14 md:py-6 border border-border">
+      <div className=" container px-8 pt-24">
+        <div className="flex lg:flex-row flex-col lg:gap-0  container justify-between pb-24 md:mb-0 mb-8">
           <div className=" flex flex-col md:gap-4 gap-[34px] md:w-[360px]">
             {/* LOGO */}
             <div className=" flex flex-row items-center w-full">
@@ -21,11 +21,11 @@ export function Footer() {
                 width={32}
                 height={32}
               />
-              <h3 className=" font-[600] text-darkTremor-background-muted  text-2xl">
+              <h3 className=" font-[600] text-foreground  text-2xl">
                 Nextbase
               </h3>
             </div>
-            <div className=" text-base text-darkTremor-background-muted">
+            <div className=" text-base text-foreground">
               Acme Inc. 123 Acme Street, London, UK, SW1A 1AA
             </div>
           </div>
@@ -64,7 +64,7 @@ export function Footer() {
         </div>
         <Separator id="seperator" className="" />
         <div className=" w-full md:h-[65px] h-[41px] mb-8 md:mb-0"></div>
-        <div className="flex md:flex-row flex-col md:justify-between gap-4 md:gap-0 md:pb-0 pb-[76px] ">
+        <div className=" container flex md:flex-row flex-col md:justify-between gap-4 md:gap-0 md:pb-0 pb-[76px] ">
           <p className=" text-muted-foreground text-sm flex md:flex-row flex-col">
             <span>
               © 2023{' '}
@@ -76,11 +76,11 @@ export function Footer() {
           </p>
 
           <div className=" flex flex-row gap-5  md:justify-evenly  md:w-[196px] ">
-            <FaFacebook className="  text-tremor-background-emphasis" />
-            <FaInstagram className="  text-tremor-background-emphasis" />
-            <FaTwitter className="  text-tremor-background-emphasis" />
-            <FaGithub className="  text-tremor-background-emphasis" />
-            <FaInstagram className="  text-tremor-background-emphasis" />
+            <FaFacebook className="  text-foreground" />
+            <FaInstagram className="  text-foreground" />
+            <FaTwitter className="  text-foreground" />
+            <FaGithub className="  text-foreground" />
+            <FaInstagram className="  text-foreground" />
           </div>
         </div>
       </div>

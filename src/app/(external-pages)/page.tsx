@@ -12,6 +12,12 @@ export default function Page() {
   return (
     <div>
       <HeroSection />
+      {/* 
+      
+      
+      
+      
+      */}
       <BrandSection />
       <FeatureSection />
       <QuotetionSection />

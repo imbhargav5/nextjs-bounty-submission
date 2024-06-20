@@ -3,8 +3,8 @@ import React from 'react';
 
 const QuotetionSection = () => {
   return (
-    <section className=" flex flex-col items-center md:px-[204px] px-4 pt-12 md:pt-24 pb-6 md:pb-12 bg-muted">
-      <figure className=" pb-12 flex flex-col gap-3">
+    <section className=" flex flex-col items-center  px-4 pt-12 md:pt-24 pb-6 md:pb-12 bg-muted">
+      <figure className=" container pb-12 flex flex-col gap-3">
         <div className=" flex items-center justify-center">
           <Quote className=" text-black rotate-180 h-12" fill="" />
         </div>

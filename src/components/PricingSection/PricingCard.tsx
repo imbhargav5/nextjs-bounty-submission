@@ -29,7 +29,7 @@ const PricingCard: FC<PricingCardProps> = ({
   return (
     <Card
       className={cn(
-        'flex flex-col md:w-[352px] relative h-fit',
+        'flex flex-col lg:w-[352px] relative h-fit',
         !!badge && 'bg-muted',
       )}
     >
@@ -54,7 +54,11 @@ const PricingCard: FC<PricingCardProps> = ({
         ))}
       </CardContent>
 
-      {badge && <Badge className=" absolute right-4 top-7">Most Popular</Badge>}
+      {badge && (
+        <Badge className=" absolute right-4 top-7 bg-foreground dark:text-background">
+          Most Popular
+        </Badge>
+      )}
     </Card>
   );
 };
