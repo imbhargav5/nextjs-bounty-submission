@@ -1,8 +1,8 @@
 'use client';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import lightLogo from '@public/logos/acme-logo-dark.png';
-import darkLogo from '@public/logos/acme-logo-light.png';
+import lightLogo from '@public/logos/nextbase-dark-logo.png';
+import darkLogo from '@public/logos/nextbase-light-logo.png';
 import { PanelLeft } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';

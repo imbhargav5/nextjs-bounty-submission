@@ -20,6 +20,10 @@ module.exports = {
       },
     },
     extend: {
+      filter: {
+        'logo-black': 'brightness(0%) invert(100%) contrast(200%) opacity(0.5)',
+        'logo-light': 'brightness(0%) invert(0%) contrast(200%) opacity(0.5)',
+      },
       colors: {
         tremor: {
           brand: {
@@ -148,6 +152,14 @@ module.exports = {
         display: ['Lexend', ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
+        orbit: {
+          "0%": {
+              transform: "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
+          },
+          "100%": {
+              transform: "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
+          },
+         },
         accordionDown: {
           from: { height: 0 },
           to: { height: 'var(--radix-accordion-content-height)' },
@@ -156,15 +168,24 @@ module.exports = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: 0 },
         },
+        'logo-cloud': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - 4rem))' },
+        },
       },
       animation: {
+        orbit: "orbit calc(var(--duration)*1s) linear infinite",
         accordionDown: 'accordion-down 0.2s ease-out',
         accordionUp: 'accordion-up 0.2s ease-out',
+        'logo-cloud': 'logo-cloud 30s linear infinite',
       },
       maxWidth: {
         '8xl': '88rem',
       },
     },
+  },
+  variants: {
+    filter: ['responsive', 'dark'],
   },
   safelist: [
     {
@@ -200,5 +221,16 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@headlessui/tailwindcss'),
     require('@tailwindcss/forms'),
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.filter-logo-black': {
+          filter: 'brightness(0%) invert(100%) contrast(200%) opacity(0.5)',
+        },
+        '.filter-logo-light': {
+          filter: 'brightness(0%) invert(0%) contrast(200%) opacity(0.5)',
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'dark'])
+    }
   ],
 };

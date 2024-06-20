@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import ShineButton from '@/components/ui/shineButton';
 
 export function ExternalNavigationCTAButton({
   isLoggedIn = false,
@@ -12,7 +13,7 @@ export function ExternalNavigationCTAButton({
   const text = isLoggedIn ? 'Dashboard' : 'Log In';
   return (
     <Link href={href} className="w-full">
-      <Button variant="default" size="default" className="group w-full">
+      {/* <Button variant="default" size="default" className="group w-full px-7 bg-white text-black">
         {isLoading ? (
           'Please wait...'
         ) : (
@@ -32,7 +33,8 @@ export function ExternalNavigationCTAButton({
             </svg>
           </>
         )}
-      </Button>
+      </Button> */}
+    <ShineButton/>
     </Link>
   );
 }
