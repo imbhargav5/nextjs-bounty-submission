@@ -40,7 +40,7 @@ export function Plan({
           ${price}
         </p>
         <Button
-          className="w-full h-9 py-2 px-4 hover:bg-tremor-primary hover:opacity-95 bg-tremor-primary text-primary-foreground dark:hover:opacity-95
+          className="w-full h-9 py-2 px-4 hover:bg-tremor-primary hover:opacity-[0.85] bg-tremor-primary text-primary-foreground dark:hover:opacity-[0.85]
        dark:bg-tremor-background-muted dark:text-tremor-primary"
         >
           Buy now

@@ -30,7 +30,9 @@ export function MobileMenu() {
                   alt="logo"
                   className="hidden dark:block h-8 w-8"
                 />
-                <span className="text-base sm:text-xl font-bold sm:inline-block">Nextbase</span>
+                <span className="text-base sm:text-xl font-bold sm:inline-block">
+                  Nextbase
+                </span>
               </div>
             </Link>
           </div>
